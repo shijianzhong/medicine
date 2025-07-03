@@ -93,11 +93,11 @@ function App() {
       try {
         // 加载所有sheet的数据
         const [xiyaoData, zhongchengyaoData, xieyixiyaoData, xieyizhongchengyaoData, jingjiaData] = await Promise.all([
-          fetch('/src/西药部分.json').then(res => res.json()),
-          fetch('/src/中成药部分.json').then(res => res.json()),
-          fetch('/src/协议西药.json').then(res => res.json()),
-          fetch('/src/协议中成药.json').then(res => res.json()),
-          fetch('/src/竞价药品部分.json').then(res => res.json())
+          fetch('./src/西药部分.json').then(res => res.json()),
+          fetch('./src/中成药部分.json').then(res => res.json()),
+          fetch('./src/协议西药.json').then(res => res.json()),
+          fetch('./src/协议中成药.json').then(res => res.json()),
+          fetch('./src/竞价药品部分.json').then(res => res.json())
         ]);
         
         setMedicineData({
