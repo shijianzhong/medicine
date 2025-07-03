@@ -529,26 +529,26 @@ function App() {
                   {/* 移动端卡片化，PC端表格 */}
                   <div className="sm:hidden flex flex-col gap-3">
                     {pagedMedicines.map((med) => (
-                      <div key={med.id} className="bg-gray-800/60 dark:bg-gray-800/60 rounded-xl p-3 shadow flex flex-col gap-1">
-                        <div className="font-bold text-base text-white mb-1">{med.name || '—'}</div>
-                        <div className="text-xs text-blue-300 mb-0.5">{med.subcategory_name || med.category_name || '—'}</div>
-                        <div className="text-xs text-gray-300 mb-0.5">{med.dosage || (med.payment_standard && med.payment_standard.join(' / ')) || '—'}</div>
-                        <div className="text-xs text-gray-400 mb-0.5">{med.note || (med.notes && med.notes.join(' / ')) || '—'}</div>
+                      <div key={med.id} className="bg-white dark:bg-gray-800/60 rounded-xl p-3 shadow flex flex-col gap-1 border border-gray-200 dark:border-gray-700">
+                        <div className="font-bold text-base text-gray-900 dark:text-white mb-1">{med.name || '—'}</div>
+                        <div className="text-xs text-blue-600 dark:text-blue-300 mb-0.5">{med.subcategory_name || med.category_name || '—'}</div>
+                        <div className="text-xs text-gray-700 dark:text-gray-300 mb-0.5">{med.dosage || (med.payment_standard && med.payment_standard.join(' / ')) || '—'}</div>
+                        <div className="text-xs text-gray-600 dark:text-gray-400 mb-0.5">{med.note || (med.notes && med.notes.join(' / ')) || '—'}</div>
                         {med.validity_period && (
-                          <div className="text-xs text-gray-500">协议有效期：{med.validity_period}</div>
+                          <div className="text-xs text-gray-500 dark:text-gray-500">协议有效期：{med.validity_period}</div>
                         )}
                         <div className="flex gap-2 mt-1">
                           <a
                             href={`https://www.baidu.com/s?wd=${encodeURIComponent(med.name)}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 hover:underline text-xs"
+                            className="text-blue-600 dark:text-blue-400 hover:underline text-xs"
                           >百度</a>
                           <a
                             href={`https://www.google.com/search?q=${encodeURIComponent(med.name)}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-green-400 hover:underline text-xs"
+                            className="text-green-600 dark:text-green-400 hover:underline text-xs"
                           >Google</a>
                         </div>
                       </div>
