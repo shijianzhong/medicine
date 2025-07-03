@@ -631,6 +631,15 @@ function App() {
             </Card>
           </div>
         </div>
+        
+        {/* 访问统计 */}
+        <div className="mt-8 text-center">
+          <div className="inline-flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-full">
+            <span id="busuanzi_container_site_pv">
+              本站总访问量 <span id="busuanzi_value_site_pv" className="font-semibold text-blue-600 dark:text-blue-400">-</span> 次
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
