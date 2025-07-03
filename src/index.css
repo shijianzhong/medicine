@@ -5,3 +5,957 @@
 body {
   @apply bg-white text-black;
 }
+
+/* 强制覆盖所有滚动条样式 - 完全隐藏 */
+* {
+  scrollbar-width: none !important;
+}
+
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-track {
+  display: none !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+*::-webkit-scrollbar-corner {
+  display: none !important;
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-button {
+  display: none !important;
+  background: transparent !important;
+}
+
+/* 黑暗模式 */
+.dark * {
+  scrollbar-width: none !important;
+}
+
+.dark *::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+  background: transparent !important;
+}
+
+.dark *::-webkit-scrollbar-track {
+  display: none !important;
+  background: transparent !important;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  display: none !important;
+  background: transparent !important;
+}
+
+.dark *::-webkit-scrollbar-corner {
+  display: none !important;
+  background: transparent !important;
+}
+
+/* 全局滚动条样式覆盖 - 最高优先级 */
+html, body, div, section, article, aside, header, footer, nav, main, form, fieldset, legend, label, input, textarea, select, button, table, thead, tbody, tfoot, tr, td, th, ul, ol, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, span, a, img, iframe, canvas, svg, video, audio, object, embed, param, source, track, map, area, details, summary, menu, menuitem, dialog, slot, template, picture, portal, search, mark, time, data, output, progress, meter, details, summary, datalist, optgroup, option, textarea, select, button, input, label, fieldset, legend, form, output, progress, meter, details, summary, datalist, optgroup, option, textarea, select, button, input, label, fieldset, legend, form {
+  scrollbar-width: thin !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+div::-webkit-scrollbar,
+section::-webkit-scrollbar,
+article::-webkit-scrollbar,
+aside::-webkit-scrollbar,
+header::-webkit-scrollbar,
+footer::-webkit-scrollbar,
+nav::-webkit-scrollbar,
+main::-webkit-scrollbar,
+form::-webkit-scrollbar,
+fieldset::-webkit-scrollbar,
+legend::-webkit-scrollbar,
+label::-webkit-scrollbar,
+input::-webkit-scrollbar,
+textarea::-webkit-scrollbar,
+select::-webkit-scrollbar,
+button::-webkit-scrollbar,
+table::-webkit-scrollbar,
+thead::-webkit-scrollbar,
+tbody::-webkit-scrollbar,
+tfoot::-webkit-scrollbar,
+tr::-webkit-scrollbar,
+td::-webkit-scrollbar,
+th::-webkit-scrollbar,
+ul::-webkit-scrollbar,
+ol::-webkit-scrollbar,
+li::-webkit-scrollbar,
+dl::-webkit-scrollbar,
+dt::-webkit-scrollbar,
+dd::-webkit-scrollbar,
+p::-webkit-scrollbar,
+h1::-webkit-scrollbar,
+h2::-webkit-scrollbar,
+h3::-webkit-scrollbar,
+h4::-webkit-scrollbar,
+h5::-webkit-scrollbar,
+h6::-webkit-scrollbar,
+span::-webkit-scrollbar,
+a::-webkit-scrollbar,
+img::-webkit-scrollbar,
+iframe::-webkit-scrollbar,
+canvas::-webkit-scrollbar,
+svg::-webkit-scrollbar,
+video::-webkit-scrollbar,
+audio::-webkit-scrollbar,
+object::-webkit-scrollbar,
+embed::-webkit-scrollbar,
+param::-webkit-scrollbar,
+source::-webkit-scrollbar,
+track::-webkit-scrollbar,
+map::-webkit-scrollbar,
+area::-webkit-scrollbar,
+details::-webkit-scrollbar,
+summary::-webkit-scrollbar,
+menu::-webkit-scrollbar,
+menuitem::-webkit-scrollbar,
+dialog::-webkit-scrollbar,
+slot::-webkit-scrollbar,
+template::-webkit-scrollbar,
+picture::-webkit-scrollbar,
+portal::-webkit-scrollbar,
+search::-webkit-scrollbar,
+mark::-webkit-scrollbar,
+time::-webkit-scrollbar,
+data::-webkit-scrollbar,
+output::-webkit-scrollbar,
+progress::-webkit-scrollbar,
+meter::-webkit-scrollbar,
+datalist::-webkit-scrollbar,
+optgroup::-webkit-scrollbar,
+option::-webkit-scrollbar {
+  width: 6px !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track,
+section::-webkit-scrollbar-track,
+article::-webkit-scrollbar-track,
+aside::-webkit-scrollbar-track,
+header::-webkit-scrollbar-track,
+footer::-webkit-scrollbar-track,
+nav::-webkit-scrollbar-track,
+main::-webkit-scrollbar-track,
+form::-webkit-scrollbar-track,
+fieldset::-webkit-scrollbar-track,
+legend::-webkit-scrollbar-track,
+label::-webkit-scrollbar-track,
+input::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track,
+select::-webkit-scrollbar-track,
+button::-webkit-scrollbar-track,
+table::-webkit-scrollbar-track,
+thead::-webkit-scrollbar-track,
+tbody::-webkit-scrollbar-track,
+tfoot::-webkit-scrollbar-track,
+tr::-webkit-scrollbar-track,
+td::-webkit-scrollbar-track,
+th::-webkit-scrollbar-track,
+ul::-webkit-scrollbar-track,
+ol::-webkit-scrollbar-track,
+li::-webkit-scrollbar-track,
+dl::-webkit-scrollbar-track,
+dt::-webkit-scrollbar-track,
+dd::-webkit-scrollbar-track,
+p::-webkit-scrollbar-track,
+h1::-webkit-scrollbar-track,
+h2::-webkit-scrollbar-track,
+h3::-webkit-scrollbar-track,
+h4::-webkit-scrollbar-track,
+h5::-webkit-scrollbar-track,
+h6::-webkit-scrollbar-track,
+span::-webkit-scrollbar-track,
+a::-webkit-scrollbar-track,
+img::-webkit-scrollbar-track,
+iframe::-webkit-scrollbar-track,
+canvas::-webkit-scrollbar-track,
+svg::-webkit-scrollbar-track,
+video::-webkit-scrollbar-track,
+audio::-webkit-scrollbar-track,
+object::-webkit-scrollbar-track,
+embed::-webkit-scrollbar-track,
+param::-webkit-scrollbar-track,
+source::-webkit-scrollbar-track,
+track::-webkit-scrollbar-track,
+map::-webkit-scrollbar-track,
+area::-webkit-scrollbar-track,
+details::-webkit-scrollbar-track,
+summary::-webkit-scrollbar-track,
+menu::-webkit-scrollbar-track,
+menuitem::-webkit-scrollbar-track,
+dialog::-webkit-scrollbar-track,
+slot::-webkit-scrollbar-track,
+template::-webkit-scrollbar-track,
+picture::-webkit-scrollbar-track,
+portal::-webkit-scrollbar-track,
+search::-webkit-scrollbar-track,
+mark::-webkit-scrollbar-track,
+time::-webkit-scrollbar-track,
+data::-webkit-scrollbar-track,
+output::-webkit-scrollbar-track,
+progress::-webkit-scrollbar-track,
+meter::-webkit-scrollbar-track,
+datalist::-webkit-scrollbar-track,
+optgroup::-webkit-scrollbar-track,
+option::-webkit-scrollbar-track {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb,
+section::-webkit-scrollbar-thumb,
+article::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb,
+header::-webkit-scrollbar-thumb,
+footer::-webkit-scrollbar-thumb,
+nav::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb,
+form::-webkit-scrollbar-thumb,
+fieldset::-webkit-scrollbar-thumb,
+legend::-webkit-scrollbar-thumb,
+label::-webkit-scrollbar-thumb,
+input::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb,
+select::-webkit-scrollbar-thumb,
+button::-webkit-scrollbar-thumb,
+table::-webkit-scrollbar-thumb,
+thead::-webkit-scrollbar-thumb,
+tbody::-webkit-scrollbar-thumb,
+tfoot::-webkit-scrollbar-thumb,
+tr::-webkit-scrollbar-thumb,
+td::-webkit-scrollbar-thumb,
+th::-webkit-scrollbar-thumb,
+ul::-webkit-scrollbar-thumb,
+ol::-webkit-scrollbar-thumb,
+li::-webkit-scrollbar-thumb,
+dl::-webkit-scrollbar-thumb,
+dt::-webkit-scrollbar-thumb,
+dd::-webkit-scrollbar-thumb,
+p::-webkit-scrollbar-thumb,
+h1::-webkit-scrollbar-thumb,
+h2::-webkit-scrollbar-thumb,
+h3::-webkit-scrollbar-thumb,
+h4::-webkit-scrollbar-thumb,
+h5::-webkit-scrollbar-thumb,
+h6::-webkit-scrollbar-thumb,
+span::-webkit-scrollbar-thumb,
+a::-webkit-scrollbar-thumb,
+img::-webkit-scrollbar-thumb,
+iframe::-webkit-scrollbar-thumb,
+canvas::-webkit-scrollbar-thumb,
+svg::-webkit-scrollbar-thumb,
+video::-webkit-scrollbar-thumb,
+audio::-webkit-scrollbar-thumb,
+object::-webkit-scrollbar-thumb,
+embed::-webkit-scrollbar-thumb,
+param::-webkit-scrollbar-thumb,
+source::-webkit-scrollbar-thumb,
+track::-webkit-scrollbar-thumb,
+map::-webkit-scrollbar-thumb,
+area::-webkit-scrollbar-thumb,
+details::-webkit-scrollbar-thumb,
+summary::-webkit-scrollbar-thumb,
+menu::-webkit-scrollbar-thumb,
+menuitem::-webkit-scrollbar-thumb,
+dialog::-webkit-scrollbar-thumb,
+slot::-webkit-scrollbar-thumb,
+template::-webkit-scrollbar-thumb,
+picture::-webkit-scrollbar-thumb,
+portal::-webkit-scrollbar-thumb,
+search::-webkit-scrollbar-thumb,
+mark::-webkit-scrollbar-thumb,
+time::-webkit-scrollbar-thumb,
+data::-webkit-scrollbar-thumb,
+output::-webkit-scrollbar-thumb,
+progress::-webkit-scrollbar-thumb,
+meter::-webkit-scrollbar-thumb,
+datalist::-webkit-scrollbar-thumb,
+optgroup::-webkit-scrollbar-thumb,
+option::-webkit-scrollbar-thumb {
+  background: #d1d5db !important;
+  border-radius: 3px !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+div::-webkit-scrollbar-thumb:hover,
+section::-webkit-scrollbar-thumb:hover,
+article::-webkit-scrollbar-thumb:hover,
+aside::-webkit-scrollbar-thumb:hover,
+header::-webkit-scrollbar-thumb:hover,
+footer::-webkit-scrollbar-thumb:hover,
+nav::-webkit-scrollbar-thumb:hover,
+main::-webkit-scrollbar-thumb:hover,
+form::-webkit-scrollbar-thumb:hover,
+fieldset::-webkit-scrollbar-thumb:hover,
+legend::-webkit-scrollbar-thumb:hover,
+label::-webkit-scrollbar-thumb:hover,
+input::-webkit-scrollbar-thumb:hover,
+textarea::-webkit-scrollbar-thumb:hover,
+select::-webkit-scrollbar-thumb:hover,
+button::-webkit-scrollbar-thumb:hover,
+table::-webkit-scrollbar-thumb:hover,
+thead::-webkit-scrollbar-thumb:hover,
+tbody::-webkit-scrollbar-thumb:hover,
+tfoot::-webkit-scrollbar-thumb:hover,
+tr::-webkit-scrollbar-thumb:hover,
+td::-webkit-scrollbar-thumb:hover,
+th::-webkit-scrollbar-thumb:hover,
+ul::-webkit-scrollbar-thumb:hover,
+ol::-webkit-scrollbar-thumb:hover,
+li::-webkit-scrollbar-thumb:hover,
+dl::-webkit-scrollbar-thumb:hover,
+dt::-webkit-scrollbar-thumb:hover,
+dd::-webkit-scrollbar-thumb:hover,
+p::-webkit-scrollbar-thumb:hover,
+h1::-webkit-scrollbar-thumb:hover,
+h2::-webkit-scrollbar-thumb:hover,
+h3::-webkit-scrollbar-thumb:hover,
+h4::-webkit-scrollbar-thumb:hover,
+h5::-webkit-scrollbar-thumb:hover,
+h6::-webkit-scrollbar-thumb:hover,
+span::-webkit-scrollbar-thumb:hover,
+a::-webkit-scrollbar-thumb:hover,
+img::-webkit-scrollbar-thumb:hover,
+iframe::-webkit-scrollbar-thumb:hover,
+canvas::-webkit-scrollbar-thumb:hover,
+svg::-webkit-scrollbar-thumb:hover,
+video::-webkit-scrollbar-thumb:hover,
+audio::-webkit-scrollbar-thumb:hover,
+object::-webkit-scrollbar-thumb:hover,
+embed::-webkit-scrollbar-thumb:hover,
+param::-webkit-scrollbar-thumb:hover,
+source::-webkit-scrollbar-thumb:hover,
+track::-webkit-scrollbar-thumb:hover,
+map::-webkit-scrollbar-thumb:hover,
+area::-webkit-scrollbar-thumb:hover,
+details::-webkit-scrollbar-thumb:hover,
+summary::-webkit-scrollbar-thumb:hover,
+menu::-webkit-scrollbar-thumb:hover,
+menuitem::-webkit-scrollbar-thumb:hover,
+dialog::-webkit-scrollbar-thumb:hover,
+slot::-webkit-scrollbar-thumb:hover,
+template::-webkit-scrollbar-thumb:hover,
+picture::-webkit-scrollbar-thumb:hover,
+portal::-webkit-scrollbar-thumb:hover,
+search::-webkit-scrollbar-thumb:hover,
+mark::-webkit-scrollbar-thumb:hover,
+time::-webkit-scrollbar-thumb:hover,
+data::-webkit-scrollbar-thumb:hover,
+output::-webkit-scrollbar-thumb:hover,
+progress::-webkit-scrollbar-thumb:hover,
+meter::-webkit-scrollbar-thumb:hover,
+datalist::-webkit-scrollbar-thumb:hover,
+optgroup::-webkit-scrollbar-thumb:hover,
+option::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af !important;
+}
+
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+div::-webkit-scrollbar-corner,
+section::-webkit-scrollbar-corner,
+article::-webkit-scrollbar-corner,
+aside::-webkit-scrollbar-corner,
+header::-webkit-scrollbar-corner,
+footer::-webkit-scrollbar-corner,
+nav::-webkit-scrollbar-corner,
+main::-webkit-scrollbar-corner,
+form::-webkit-scrollbar-corner,
+fieldset::-webkit-scrollbar-corner,
+legend::-webkit-scrollbar-corner,
+label::-webkit-scrollbar-corner,
+input::-webkit-scrollbar-corner,
+textarea::-webkit-scrollbar-corner,
+select::-webkit-scrollbar-corner,
+button::-webkit-scrollbar-corner,
+table::-webkit-scrollbar-corner,
+thead::-webkit-scrollbar-corner,
+tbody::-webkit-scrollbar-corner,
+tfoot::-webkit-scrollbar-corner,
+tr::-webkit-scrollbar-corner,
+td::-webkit-scrollbar-corner,
+th::-webkit-scrollbar-corner,
+ul::-webkit-scrollbar-corner,
+ol::-webkit-scrollbar-corner,
+li::-webkit-scrollbar-corner,
+dl::-webkit-scrollbar-corner,
+dt::-webkit-scrollbar-corner,
+dd::-webkit-scrollbar-corner,
+p::-webkit-scrollbar-corner,
+h1::-webkit-scrollbar-corner,
+h2::-webkit-scrollbar-corner,
+h3::-webkit-scrollbar-corner,
+h4::-webkit-scrollbar-corner,
+h5::-webkit-scrollbar-corner,
+h6::-webkit-scrollbar-corner,
+span::-webkit-scrollbar-corner,
+a::-webkit-scrollbar-corner,
+img::-webkit-scrollbar-corner,
+iframe::-webkit-scrollbar-corner,
+canvas::-webkit-scrollbar-corner,
+svg::-webkit-scrollbar-corner,
+video::-webkit-scrollbar-corner,
+audio::-webkit-scrollbar-corner,
+object::-webkit-scrollbar-corner,
+embed::-webkit-scrollbar-corner,
+param::-webkit-scrollbar-corner,
+source::-webkit-scrollbar-corner,
+track::-webkit-scrollbar-corner,
+map::-webkit-scrollbar-corner,
+area::-webkit-scrollbar-corner,
+details::-webkit-scrollbar-corner,
+summary::-webkit-scrollbar-corner,
+menu::-webkit-scrollbar-corner,
+menuitem::-webkit-scrollbar-corner,
+dialog::-webkit-scrollbar-corner,
+slot::-webkit-scrollbar-corner,
+template::-webkit-scrollbar-corner,
+picture::-webkit-scrollbar-corner,
+portal::-webkit-scrollbar-corner,
+search::-webkit-scrollbar-corner,
+mark::-webkit-scrollbar-corner,
+time::-webkit-scrollbar-corner,
+data::-webkit-scrollbar-corner,
+output::-webkit-scrollbar-corner,
+progress::-webkit-scrollbar-corner,
+meter::-webkit-scrollbar-corner,
+datalist::-webkit-scrollbar-corner,
+optgroup::-webkit-scrollbar-corner,
+option::-webkit-scrollbar-corner {
+  background: transparent !important;
+}
+
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+div::-webkit-scrollbar-button,
+section::-webkit-scrollbar-button,
+article::-webkit-scrollbar-button,
+aside::-webkit-scrollbar-button,
+header::-webkit-scrollbar-button,
+footer::-webkit-scrollbar-button,
+nav::-webkit-scrollbar-button,
+main::-webkit-scrollbar-button,
+form::-webkit-scrollbar-button,
+fieldset::-webkit-scrollbar-button,
+legend::-webkit-scrollbar-button,
+label::-webkit-scrollbar-button,
+input::-webkit-scrollbar-button,
+textarea::-webkit-scrollbar-button,
+select::-webkit-scrollbar-button,
+button::-webkit-scrollbar-button,
+table::-webkit-scrollbar-button,
+thead::-webkit-scrollbar-button,
+tbody::-webkit-scrollbar-button,
+tfoot::-webkit-scrollbar-button,
+tr::-webkit-scrollbar-button,
+td::-webkit-scrollbar-button,
+th::-webkit-scrollbar-button,
+ul::-webkit-scrollbar-button,
+ol::-webkit-scrollbar-button,
+li::-webkit-scrollbar-button,
+dl::-webkit-scrollbar-button,
+dt::-webkit-scrollbar-button,
+dd::-webkit-scrollbar-button,
+p::-webkit-scrollbar-button,
+h1::-webkit-scrollbar-button,
+h2::-webkit-scrollbar-button,
+h3::-webkit-scrollbar-button,
+h4::-webkit-scrollbar-button,
+h5::-webkit-scrollbar-button,
+h6::-webkit-scrollbar-button,
+span::-webkit-scrollbar-button,
+a::-webkit-scrollbar-button,
+img::-webkit-scrollbar-button,
+iframe::-webkit-scrollbar-button,
+canvas::-webkit-scrollbar-button,
+svg::-webkit-scrollbar-button,
+video::-webkit-scrollbar-button,
+audio::-webkit-scrollbar-button,
+object::-webkit-scrollbar-button,
+embed::-webkit-scrollbar-button,
+param::-webkit-scrollbar-button,
+source::-webkit-scrollbar-button,
+track::-webkit-scrollbar-button,
+map::-webkit-scrollbar-button,
+area::-webkit-scrollbar-button,
+details::-webkit-scrollbar-button,
+summary::-webkit-scrollbar-button,
+menu::-webkit-scrollbar-button,
+menuitem::-webkit-scrollbar-button,
+dialog::-webkit-scrollbar-button,
+slot::-webkit-scrollbar-button,
+template::-webkit-scrollbar-button,
+picture::-webkit-scrollbar-button,
+portal::-webkit-scrollbar-button,
+search::-webkit-scrollbar-button,
+mark::-webkit-scrollbar-button,
+time::-webkit-scrollbar-button,
+data::-webkit-scrollbar-button,
+output::-webkit-scrollbar-button,
+progress::-webkit-scrollbar-button,
+meter::-webkit-scrollbar-button,
+datalist::-webkit-scrollbar-button,
+optgroup::-webkit-scrollbar-button,
+option::-webkit-scrollbar-button {
+  display: none !important;
+}
+
+/* 黑暗模式全局滚动条 */
+.dark html::-webkit-scrollbar-track,
+.dark body::-webkit-scrollbar-track,
+.dark div::-webkit-scrollbar-track,
+.dark section::-webkit-scrollbar-track,
+.dark article::-webkit-scrollbar-track,
+.dark aside::-webkit-scrollbar-track,
+.dark header::-webkit-scrollbar-track,
+.dark footer::-webkit-scrollbar-track,
+.dark nav::-webkit-scrollbar-track,
+.dark main::-webkit-scrollbar-track,
+.dark form::-webkit-scrollbar-track,
+.dark fieldset::-webkit-scrollbar-track,
+.dark legend::-webkit-scrollbar-track,
+.dark label::-webkit-scrollbar-track,
+.dark input::-webkit-scrollbar-track,
+.dark textarea::-webkit-scrollbar-track,
+.dark select::-webkit-scrollbar-track,
+.dark button::-webkit-scrollbar-track,
+.dark table::-webkit-scrollbar-track,
+.dark thead::-webkit-scrollbar-track,
+.dark tbody::-webkit-scrollbar-track,
+.dark tfoot::-webkit-scrollbar-track,
+.dark tr::-webkit-scrollbar-track,
+.dark td::-webkit-scrollbar-track,
+.dark th::-webkit-scrollbar-track,
+.dark ul::-webkit-scrollbar-track,
+.dark ol::-webkit-scrollbar-track,
+.dark li::-webkit-scrollbar-track,
+.dark dl::-webkit-scrollbar-track,
+.dark dt::-webkit-scrollbar-track,
+.dark dd::-webkit-scrollbar-track,
+.dark p::-webkit-scrollbar-track,
+.dark h1::-webkit-scrollbar-track,
+.dark h2::-webkit-scrollbar-track,
+.dark h3::-webkit-scrollbar-track,
+.dark h4::-webkit-scrollbar-track,
+.dark h5::-webkit-scrollbar-track,
+.dark h6::-webkit-scrollbar-track,
+.dark span::-webkit-scrollbar-track,
+.dark a::-webkit-scrollbar-track,
+.dark img::-webkit-scrollbar-track,
+.dark iframe::-webkit-scrollbar-track,
+.dark canvas::-webkit-scrollbar-track,
+.dark svg::-webkit-scrollbar-track,
+.dark video::-webkit-scrollbar-track,
+.dark audio::-webkit-scrollbar-track,
+.dark object::-webkit-scrollbar-track,
+.dark embed::-webkit-scrollbar-track,
+.dark param::-webkit-scrollbar-track,
+.dark source::-webkit-scrollbar-track,
+.dark track::-webkit-scrollbar-track,
+.dark map::-webkit-scrollbar-track,
+.dark area::-webkit-scrollbar-track,
+.dark details::-webkit-scrollbar-track,
+.dark summary::-webkit-scrollbar-track,
+.dark menu::-webkit-scrollbar-track,
+.dark menuitem::-webkit-scrollbar-track,
+.dark dialog::-webkit-scrollbar-track,
+.dark slot::-webkit-scrollbar-track,
+.dark template::-webkit-scrollbar-track,
+.dark picture::-webkit-scrollbar-track,
+.dark portal::-webkit-scrollbar-track,
+.dark search::-webkit-scrollbar-track,
+.dark mark::-webkit-scrollbar-track,
+.dark time::-webkit-scrollbar-track,
+.dark data::-webkit-scrollbar-track,
+.dark output::-webkit-scrollbar-track,
+.dark progress::-webkit-scrollbar-track,
+.dark meter::-webkit-scrollbar-track,
+.dark datalist::-webkit-scrollbar-track,
+.dark optgroup::-webkit-scrollbar-track,
+.dark option::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.dark html::-webkit-scrollbar-thumb,
+.dark body::-webkit-scrollbar-thumb,
+.dark div::-webkit-scrollbar-thumb,
+.dark section::-webkit-scrollbar-thumb,
+.dark article::-webkit-scrollbar-thumb,
+.dark aside::-webkit-scrollbar-thumb,
+.dark header::-webkit-scrollbar-thumb,
+.dark footer::-webkit-scrollbar-thumb,
+.dark nav::-webkit-scrollbar-thumb,
+.dark main::-webkit-scrollbar-thumb,
+.dark form::-webkit-scrollbar-thumb,
+.dark fieldset::-webkit-scrollbar-thumb,
+.dark legend::-webkit-scrollbar-thumb,
+.dark label::-webkit-scrollbar-thumb,
+.dark input::-webkit-scrollbar-thumb,
+.dark textarea::-webkit-scrollbar-thumb,
+.dark select::-webkit-scrollbar-thumb,
+.dark button::-webkit-scrollbar-thumb,
+.dark table::-webkit-scrollbar-thumb,
+.dark thead::-webkit-scrollbar-thumb,
+.dark tbody::-webkit-scrollbar-thumb,
+.dark tfoot::-webkit-scrollbar-thumb,
+.dark tr::-webkit-scrollbar-thumb,
+.dark td::-webkit-scrollbar-thumb,
+.dark th::-webkit-scrollbar-thumb,
+.dark ul::-webkit-scrollbar-thumb,
+.dark ol::-webkit-scrollbar-thumb,
+.dark li::-webkit-scrollbar-thumb,
+.dark dl::-webkit-scrollbar-thumb,
+.dark dt::-webkit-scrollbar-thumb,
+.dark dd::-webkit-scrollbar-thumb,
+.dark p::-webkit-scrollbar-thumb,
+.dark h1::-webkit-scrollbar-thumb,
+.dark h2::-webkit-scrollbar-thumb,
+.dark h3::-webkit-scrollbar-thumb,
+.dark h4::-webkit-scrollbar-thumb,
+.dark h5::-webkit-scrollbar-thumb,
+.dark h6::-webkit-scrollbar-thumb,
+.dark span::-webkit-scrollbar-thumb,
+.dark a::-webkit-scrollbar-thumb,
+.dark img::-webkit-scrollbar-thumb,
+.dark iframe::-webkit-scrollbar-thumb,
+.dark canvas::-webkit-scrollbar-thumb,
+.dark svg::-webkit-scrollbar-thumb,
+.dark video::-webkit-scrollbar-thumb,
+.dark audio::-webkit-scrollbar-thumb,
+.dark object::-webkit-scrollbar-thumb,
+.dark embed::-webkit-scrollbar-thumb,
+.dark param::-webkit-scrollbar-thumb,
+.dark source::-webkit-scrollbar-thumb,
+.dark track::-webkit-scrollbar-thumb,
+.dark map::-webkit-scrollbar-thumb,
+.dark area::-webkit-scrollbar-thumb,
+.dark details::-webkit-scrollbar-thumb,
+.dark summary::-webkit-scrollbar-thumb,
+.dark menu::-webkit-scrollbar-thumb,
+.dark menuitem::-webkit-scrollbar-thumb,
+.dark dialog::-webkit-scrollbar-thumb,
+.dark slot::-webkit-scrollbar-thumb,
+.dark template::-webkit-scrollbar-thumb,
+.dark picture::-webkit-scrollbar-thumb,
+.dark portal::-webkit-scrollbar-thumb,
+.dark search::-webkit-scrollbar-thumb,
+.dark mark::-webkit-scrollbar-thumb,
+.dark time::-webkit-scrollbar-thumb,
+.dark data::-webkit-scrollbar-thumb,
+.dark output::-webkit-scrollbar-thumb,
+.dark progress::-webkit-scrollbar-thumb,
+.dark meter::-webkit-scrollbar-thumb,
+.dark datalist::-webkit-scrollbar-thumb,
+.dark optgroup::-webkit-scrollbar-thumb,
+.dark option::-webkit-scrollbar-thumb {
+  background: #6b7280 !important;
+}
+
+.dark html::-webkit-scrollbar-thumb:hover,
+.dark body::-webkit-scrollbar-thumb:hover,
+.dark div::-webkit-scrollbar-thumb:hover,
+.dark section::-webkit-scrollbar-thumb:hover,
+.dark article::-webkit-scrollbar-thumb:hover,
+.dark aside::-webkit-scrollbar-thumb:hover,
+.dark header::-webkit-scrollbar-thumb:hover,
+.dark footer::-webkit-scrollbar-thumb:hover,
+.dark nav::-webkit-scrollbar-thumb:hover,
+.dark main::-webkit-scrollbar-thumb:hover,
+.dark form::-webkit-scrollbar-thumb:hover,
+.dark fieldset::-webkit-scrollbar-thumb:hover,
+.dark legend::-webkit-scrollbar-thumb:hover,
+.dark label::-webkit-scrollbar-thumb:hover,
+.dark input::-webkit-scrollbar-thumb:hover,
+.dark textarea::-webkit-scrollbar-thumb:hover,
+.dark select::-webkit-scrollbar-thumb:hover,
+.dark button::-webkit-scrollbar-thumb:hover,
+.dark table::-webkit-scrollbar-thumb:hover,
+.dark thead::-webkit-scrollbar-thumb:hover,
+.dark tbody::-webkit-scrollbar-thumb:hover,
+.dark tfoot::-webkit-scrollbar-thumb:hover,
+.dark tr::-webkit-scrollbar-thumb:hover,
+.dark td::-webkit-scrollbar-thumb:hover,
+.dark th::-webkit-scrollbar-thumb:hover,
+.dark ul::-webkit-scrollbar-thumb:hover,
+.dark ol::-webkit-scrollbar-thumb:hover,
+.dark li::-webkit-scrollbar-thumb:hover,
+.dark dl::-webkit-scrollbar-thumb:hover,
+.dark dt::-webkit-scrollbar-thumb:hover,
+.dark dd::-webkit-scrollbar-thumb:hover,
+.dark p::-webkit-scrollbar-thumb:hover,
+.dark h1::-webkit-scrollbar-thumb:hover,
+.dark h2::-webkit-scrollbar-thumb:hover,
+.dark h3::-webkit-scrollbar-thumb:hover,
+.dark h4::-webkit-scrollbar-thumb:hover,
+.dark h5::-webkit-scrollbar-thumb:hover,
+.dark h6::-webkit-scrollbar-thumb:hover,
+.dark span::-webkit-scrollbar-thumb:hover,
+.dark a::-webkit-scrollbar-thumb:hover,
+.dark img::-webkit-scrollbar-thumb:hover,
+.dark iframe::-webkit-scrollbar-thumb:hover,
+.dark canvas::-webkit-scrollbar-thumb:hover,
+.dark svg::-webkit-scrollbar-thumb:hover,
+.dark video::-webkit-scrollbar-thumb:hover,
+.dark audio::-webkit-scrollbar-thumb:hover,
+.dark object::-webkit-scrollbar-thumb:hover,
+.dark embed::-webkit-scrollbar-thumb:hover,
+.dark param::-webkit-scrollbar-thumb:hover,
+.dark source::-webkit-scrollbar-thumb:hover,
+.dark track::-webkit-scrollbar-thumb:hover,
+.dark map::-webkit-scrollbar-thumb:hover,
+.dark area::-webkit-scrollbar-thumb:hover,
+.dark details::-webkit-scrollbar-thumb:hover,
+.dark summary::-webkit-scrollbar-thumb:hover,
+.dark menu::-webkit-scrollbar-thumb:hover,
+.dark menuitem::-webkit-scrollbar-thumb:hover,
+.dark dialog::-webkit-scrollbar-thumb:hover,
+.dark slot::-webkit-scrollbar-thumb:hover,
+.dark template::-webkit-scrollbar-thumb:hover,
+.dark picture::-webkit-scrollbar-thumb:hover,
+.dark portal::-webkit-scrollbar-thumb:hover,
+.dark search::-webkit-scrollbar-thumb:hover,
+.dark mark::-webkit-scrollbar-thumb:hover,
+.dark time::-webkit-scrollbar-thumb:hover,
+.dark data::-webkit-scrollbar-thumb:hover,
+.dark output::-webkit-scrollbar-thumb:hover,
+.dark progress::-webkit-scrollbar-thumb:hover,
+.dark meter::-webkit-scrollbar-thumb:hover,
+.dark datalist::-webkit-scrollbar-thumb:hover,
+.dark optgroup::-webkit-scrollbar-thumb:hover,
+.dark option::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af !important;
+}
+
+.dark html::-webkit-scrollbar-corner,
+.dark body::-webkit-scrollbar-corner,
+.dark div::-webkit-scrollbar-corner,
+.dark section::-webkit-scrollbar-corner,
+.dark article::-webkit-scrollbar-corner,
+.dark aside::-webkit-scrollbar-corner,
+.dark header::-webkit-scrollbar-corner,
+.dark footer::-webkit-scrollbar-corner,
+.dark nav::-webkit-scrollbar-corner,
+.dark main::-webkit-scrollbar-corner,
+.dark form::-webkit-scrollbar-corner,
+.dark fieldset::-webkit-scrollbar-corner,
+.dark legend::-webkit-scrollbar-corner,
+.dark label::-webkit-scrollbar-corner,
+.dark input::-webkit-scrollbar-corner,
+.dark textarea::-webkit-scrollbar-corner,
+.dark select::-webkit-scrollbar-corner,
+.dark button::-webkit-scrollbar-corner,
+.dark table::-webkit-scrollbar-corner,
+.dark thead::-webkit-scrollbar-corner,
+.dark tbody::-webkit-scrollbar-corner,
+.dark tfoot::-webkit-scrollbar-corner,
+.dark tr::-webkit-scrollbar-corner,
+.dark td::-webkit-scrollbar-corner,
+.dark th::-webkit-scrollbar-corner,
+.dark ul::-webkit-scrollbar-corner,
+.dark ol::-webkit-scrollbar-corner,
+.dark li::-webkit-scrollbar-corner,
+.dark dl::-webkit-scrollbar-corner,
+.dark dt::-webkit-scrollbar-corner,
+.dark dd::-webkit-scrollbar-corner,
+.dark p::-webkit-scrollbar-corner,
+.dark h1::-webkit-scrollbar-corner,
+.dark h2::-webkit-scrollbar-corner,
+.dark h3::-webkit-scrollbar-corner,
+.dark h4::-webkit-scrollbar-corner,
+.dark h5::-webkit-scrollbar-corner,
+.dark h6::-webkit-scrollbar-corner,
+.dark span::-webkit-scrollbar-corner,
+.dark a::-webkit-scrollbar-corner,
+.dark img::-webkit-scrollbar-corner,
+.dark iframe::-webkit-scrollbar-corner,
+.dark canvas::-webkit-scrollbar-corner,
+.dark svg::-webkit-scrollbar-corner,
+.dark video::-webkit-scrollbar-corner,
+.dark audio::-webkit-scrollbar-corner,
+.dark object::-webkit-scrollbar-corner,
+.dark embed::-webkit-scrollbar-corner,
+.dark param::-webkit-scrollbar-corner,
+.dark source::-webkit-scrollbar-corner,
+.dark track::-webkit-scrollbar-corner,
+.dark map::-webkit-scrollbar-corner,
+.dark area::-webkit-scrollbar-corner,
+.dark details::-webkit-scrollbar-corner,
+.dark summary::-webkit-scrollbar-corner,
+.dark menu::-webkit-scrollbar-corner,
+.dark menuitem::-webkit-scrollbar-corner,
+.dark dialog::-webkit-scrollbar-corner,
+.dark slot::-webkit-scrollbar-corner,
+.dark template::-webkit-scrollbar-corner,
+.dark picture::-webkit-scrollbar-corner,
+.dark portal::-webkit-scrollbar-corner,
+.dark search::-webkit-scrollbar-corner,
+.dark mark::-webkit-scrollbar-corner,
+.dark time::-webkit-scrollbar-corner,
+.dark data::-webkit-scrollbar-corner,
+.dark output::-webkit-scrollbar-corner,
+.dark progress::-webkit-scrollbar-corner,
+.dark meter::-webkit-scrollbar-corner,
+.dark datalist::-webkit-scrollbar-corner,
+.dark optgroup::-webkit-scrollbar-corner,
+.dark option::-webkit-scrollbar-corner {
+  background: transparent !important;
+}
+
+/* 自定义滚动条样式 */
+@layer utilities {
+  /* 浅色模式滚动条 */
+  .scrollbar-light {
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db #f3f4f6;
+  }
+  
+  .scrollbar-light::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-light::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-radius: 3px;
+  }
+  
+  .scrollbar-light::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+  }
+  
+  .scrollbar-light::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+  
+  /* 深色模式滚动条 */
+  .scrollbar-dark {
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 transparent;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar {
+    width: 6px;
+    background: transparent !important;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-track {
+    background: transparent !important;
+    border-radius: 3px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-thumb {
+    background: #4b5563 !important;
+    border-radius: 3px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-thumb:hover {
+    background: #6b7280 !important;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-corner {
+    background: transparent !important;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-button {
+    display: none !important;
+  }
+  
+  /* 响应式滚动条 - 根据主题自动切换 */
+  .scrollbar-theme {
+    scrollbar-width: none !important;
+  }
+  
+  .scrollbar-theme::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+    background: transparent !important;
+  }
+  
+  .scrollbar-theme::-webkit-scrollbar-track {
+    display: none !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .dark .scrollbar-theme::-webkit-scrollbar-track {
+    display: none !important;
+    background: transparent !important;
+  }
+  
+  .scrollbar-theme::-webkit-scrollbar-thumb {
+    display: none !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .dark .scrollbar-theme::-webkit-scrollbar-thumb {
+    display: none !important;
+    background: transparent !important;
+  }
+  
+  .scrollbar-theme::-webkit-scrollbar-thumb:hover {
+    display: none !important;
+    background: transparent !important;
+  }
+  
+  .dark .scrollbar-theme::-webkit-scrollbar-thumb:hover {
+    display: none !important;
+    background: transparent !important;
+  }
+  
+  .scrollbar-theme::-webkit-scrollbar-corner {
+    display: none !important;
+    background: transparent !important;
+  }
+  
+  .dark .scrollbar-theme::-webkit-scrollbar-corner {
+    display: none !important;
+    background: transparent !important;
+  }
+  
+  .scrollbar-theme::-webkit-scrollbar-button {
+    display: none !important;
+    background: transparent !important;
+  }
+}
