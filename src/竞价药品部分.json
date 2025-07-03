@@ -1,0 +1,800 @@
+{
+  "categories": {
+    "XA": {
+      "code": "XA",
+      "name": "消化道和代谢方面的药物",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "XA10": {
+          "code": "XA10",
+          "name": "糖尿病用药",
+          "level": 2,
+          "parent_code": "XA",
+          "subcategories": {
+            "XA10B": {
+              "code": "XA10B",
+              "name": "降血糖药物，  不含胰岛素",
+              "level": 3,
+              "parent_code": "XA10",
+              "subcategories": {
+                "XA10BD": {
+                  "code": "XA10BD",
+                  "name": "口服复方降糖药",
+                  "level": 4,
+                  "parent_code": "XA10B",
+                  "subcategories": {},
+                  "medicine_count": 3
+                },
+                "XA10BH": {
+                  "code": "XA10BH",
+                  "name": "二肽基肽酶-4(DPP-4)抑制剂",
+                  "level": 4,
+                  "parent_code": "XA10B",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 4
+            }
+          },
+          "medicine_count": 4
+        },
+        "XA11": {
+          "code": "XA11",
+          "name": "维生素类",
+          "level": 2,
+          "parent_code": "XA",
+          "subcategories": {},
+          "medicine_count": 1
+        },
+        "XA16": {
+          "code": "XA16",
+          "name": "其他消化道及代谢用药",
+          "level": 2,
+          "parent_code": "XA",
+          "subcategories": {},
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 6
+    },
+    "XB": {
+      "code": "XB",
+      "name": "血液和造血器官药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "XB05": {
+          "code": "XB05",
+          "name": "血液代用品和灌注液",
+          "level": 2,
+          "parent_code": "XB",
+          "subcategories": {
+            "XB05B": {
+              "code": "XB05B",
+              "name": "静脉注射液",
+              "level": 3,
+              "parent_code": "XB05",
+              "subcategories": {
+                "XB05BB": {
+                  "code": "XB05BB",
+                  "name": "影响电解质平衡的",
+                  "level": 4,
+                  "parent_code": "XB05B",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            },
+            "XB05C": {
+              "code": "XB05C",
+              "name": "灌洗液",
+              "level": 3,
+              "parent_code": "XB05",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 2
+        }
+      },
+      "medicine_count": 2
+    },
+    "XC": {
+      "code": "XC",
+      "name": "心血管系统",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "XC10": {
+          "code": "XC10",
+          "name": "调节血脂药",
+          "level": 2,
+          "parent_code": "XC",
+          "subcategories": {
+            "XC10A": {
+              "code": "XC10A",
+              "name": "单方调节血脂药",
+              "level": 3,
+              "parent_code": "XC10",
+              "subcategories": {
+                "XC10AB": {
+                  "code": "XC10AB",
+                  "name": "贝特类",
+                  "level": 4,
+                  "parent_code": "XC10A",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 1
+    },
+    "XJ": {
+      "code": "XJ",
+      "name": "全身用抗感染药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "XJ01": {
+          "code": "XJ01",
+          "name": "全身用抗菌药",
+          "level": 2,
+          "parent_code": "XJ",
+          "subcategories": {
+            "XJ01D": {
+              "code": "XJ01D",
+              "name": "其他β-内酰胺类抗菌药",
+              "level": 3,
+              "parent_code": "XJ01",
+              "subcategories": {
+                "XJ01DD": {
+                  "code": "XJ01DD",
+                  "name": "第三代头孢菌素",
+                  "level": 4,
+                  "parent_code": "XJ01D",
+                  "subcategories": {},
+                  "medicine_count": 2
+                }
+              },
+              "medicine_count": 2
+            },
+            "XJ01X": {
+              "code": "XJ01X",
+              "name": "其他抗菌药",
+              "level": 3,
+              "parent_code": "XJ01",
+              "subcategories": {
+                "XJ01XX": {
+                  "code": "XJ01XX",
+                  "name": "其他抗菌药",
+                  "level": 4,
+                  "parent_code": "XJ01X",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 3
+        }
+      },
+      "medicine_count": 3
+    },
+    "XL": {
+      "code": "XL",
+      "name": "抗肿瘤药及免疫调节剂",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "XL01": {
+          "code": "XL01",
+          "name": "抗肿瘤药",
+          "level": 2,
+          "parent_code": "XL",
+          "subcategories": {
+            "XL01B": {
+              "code": "XL01B",
+              "name": "抗代谢药",
+              "level": 3,
+              "parent_code": "XL01",
+              "subcategories": {
+                "XL01BC": {
+                  "code": "XL01BC",
+                  "name": "嘧啶类似物",
+                  "level": 4,
+                  "parent_code": "XL01B",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        },
+        "XL04": {
+          "code": "XL04",
+          "name": "免疫抑制剂",
+          "level": 2,
+          "parent_code": "XL",
+          "subcategories": {
+            "XL04A": {
+              "code": "XL04A",
+              "name": "免疫抑制剂",
+              "level": 3,
+              "parent_code": "XL04",
+              "subcategories": {
+                "XL04AD": {
+                  "code": "XL04AD",
+                  "name": "钙神经素抑制剂",
+                  "level": 4,
+                  "parent_code": "XL04A",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 2
+    },
+    "XN": {
+      "code": "XN",
+      "name": "神经系统药物",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "XN03": {
+          "code": "XN03",
+          "name": "抗癫痫药",
+          "level": 2,
+          "parent_code": "XN",
+          "subcategories": {
+            "XN03A": {
+              "code": "XN03A",
+              "name": "抗癫痫药",
+              "level": 3,
+              "parent_code": "XN03",
+              "subcategories": {
+                "XN03AG": {
+                  "code": "XN03AG",
+                  "name": "脂肪酸衍生物",
+                  "level": 4,
+                  "parent_code": "XN03A",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        },
+        "XN05": {
+          "code": "XN05",
+          "name": "精神安定药",
+          "level": 2,
+          "parent_code": "XN",
+          "subcategories": {
+            "XN05A": {
+              "code": "XN05A",
+              "name": "抗精神病药",
+              "level": 3,
+              "parent_code": "XN05",
+              "subcategories": {
+                "XN05AX": {
+                  "code": "XN05AX",
+                  "name": "其他抗精神病药",
+                  "level": 4,
+                  "parent_code": "XN05A",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            },
+            "XN05C": {
+              "code": "XN05C",
+              "name": "催眠药和镇静药",
+              "level": 3,
+              "parent_code": "XN05",
+              "subcategories": {
+                "XN05CM": {
+                  "code": "XN05CM",
+                  "name": "其他催眠镇静剂",
+                  "level": 4,
+                  "parent_code": "XN05C",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 2
+        },
+        "XN06": {
+          "code": "XN06",
+          "name": "精神兴奋药",
+          "level": 2,
+          "parent_code": "XN",
+          "subcategories": {
+            "XN06A": {
+              "code": "XN06A",
+              "name": "抗抑郁药",
+              "level": 3,
+              "parent_code": "XN06",
+              "subcategories": {
+                "XN06AB": {
+                  "code": "XN06AB",
+                  "name": "选择性5-羟色胺再摄取抑制剂",
+                  "level": 4,
+                  "parent_code": "XN06A",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        },
+        "XN07": {
+          "code": "XN07",
+          "name": "其他神经系统药物",
+          "level": 2,
+          "parent_code": "XN",
+          "subcategories": {
+            "XN07X": {
+              "code": "XN07X",
+              "name": "其他神经系统药物",
+              "level": 3,
+              "parent_code": "XN07",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 5
+    },
+    "XR": {
+      "code": "XR",
+      "name": "呼吸系统",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "XR01": {
+          "code": "XR01",
+          "name": "鼻部制剂",
+          "level": 2,
+          "parent_code": "XR",
+          "subcategories": {
+            "XR01A": {
+              "code": "XR01A",
+              "name": "减轻充血药及其他鼻局部用药",
+              "level": 3,
+              "parent_code": "XR01",
+              "subcategories": {
+                "XR01AD": {
+                  "code": "XR01AD",
+                  "name": "皮质激素类",
+                  "level": 4,
+                  "parent_code": "XR01A",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        },
+        "XR05": {
+          "code": "XR05",
+          "name": "咳嗽和感冒制剂",
+          "level": 2,
+          "parent_code": "XR",
+          "subcategories": {
+            "XR05C": {
+              "code": "XR05C",
+              "name": "不含复方镇咳药的祛痰药",
+              "level": 3,
+              "parent_code": "XR05",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 2
+    }
+  },
+  "medicines": [
+    {
+      "id": "竞价药品部分_6",
+      "name": "西格列汀二甲双胍缓释片",
+      "sheet": "竞价药品部分",
+      "category_code": "XA10BD",
+      "category_name": "口服复方降糖药",
+      "all_category_codes": [
+        "XA",
+        "XA10",
+        "XA10B",
+        "XA10BD"
+      ],
+      "payment_standard": [
+        "3.49元(磷酸西格列汀50mg (以\nC16H15F6N5O计)和盐酸二甲双胍\n500mg/片)；\n5.93元(磷酸西格列汀100mg (以\nC16H15F6N5O计)和盐酸二甲双胍\n1000mg/片)"
+      ],
+      "note": "",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_7",
+      "name": "二甲双胍恩格列净片 (Ⅲ)",
+      "sheet": "竞价药品部分",
+      "category_code": "XA10BD",
+      "category_name": "口服复方降糖药",
+      "all_category_codes": [
+        "XA",
+        "XA10",
+        "XA10B",
+        "XA10BD"
+      ],
+      "payment_standard": [
+        "1.05元(每片含盐酸二甲双胍\n850mg和恩格列净5mg)"
+      ],
+      "note": "限2型糖尿病患者。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "竞价药品部分_8",
+      "name": "二甲双胍恩格列净片 (Ⅵ)",
+      "sheet": "竞价药品部分",
+      "category_code": "XA10BD",
+      "category_name": "口服复方降糖药",
+      "all_category_codes": [
+        "XA",
+        "XA10",
+        "XA10B",
+        "XA10BD"
+      ],
+      "payment_standard": [
+        "1.74元(每片含盐酸二甲双胍\n1000mg与恩格列净12.5mg)"
+      ],
+      "note": "限2型糖尿病患者。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "竞价药品部分_10",
+      "name": "氢溴酸替格列汀片",
+      "sheet": "竞价药品部分",
+      "category_code": "XA10BH",
+      "category_name": "二肽基肽酶-4(DPP-4)抑制剂",
+      "all_category_codes": [
+        "XA",
+        "XA10",
+        "XA10B",
+        "XA10BH"
+      ],
+      "payment_standard": [
+        "3.50元(20mg/片)"
+      ],
+      "note": "",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_12",
+      "name": "骨化三醇口服溶液",
+      "sheet": "竞价药品部分",
+      "category_code": "XA11",
+      "category_name": "维生素类",
+      "all_category_codes": [
+        "XA",
+        "XA11"
+      ],
+      "payment_standard": [
+        "48.90元(10ml:10µg/瓶)；\n66.70元(15ml:15µg/瓶)"
+      ],
+      "note": "限：  1.绝经后骨质疏松；  2.慢性肾功\n能衰竭，尤其是接受血液透析患者之\n肾性骨营养不良症；  3.术后甲状旁腺\n功能低下；  4.特发性甲状旁腺功能低\n下；  5.假性甲状旁腺功能低下；  6.维\n生素D依赖性佝偻病；  7.低血磷性维生\n素D抵抗型佝偻病等。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_14",
+      "name": "尼替西农胶囊",
+      "sheet": "竞价药品部分",
+      "category_code": "XA16",
+      "category_name": "其他消化道及代谢用药",
+      "all_category_codes": [
+        "XA",
+        "XA16"
+      ],
+      "payment_standard": [
+        "36.46元(2mg/粒)；\n73.53元(5mg/粒)；\n125.00元(10mg/粒)；\n212.50元(20mg/粒)"
+      ],
+      "note": "限成人和儿童酪氨酸血症 Ⅰ型(HT-1)。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_19",
+      "name": "复方电解质醋酸钠葡萄糖注射液",
+      "sheet": "竞价药品部分",
+      "category_code": "XB05BB",
+      "category_name": "影响电解质平衡的",
+      "all_category_codes": [
+        "XB",
+        "XB05",
+        "XB05B",
+        "XB05BB"
+      ],
+      "payment_standard": [
+        "30.75元(250ml/袋)；\n52.28元(500ml/袋)"
+      ],
+      "note": "",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_21",
+      "name": "山梨醇甘露醇冲洗剂",
+      "sheet": "竞价药品部分",
+      "category_code": "XB05C",
+      "category_name": "灌洗液",
+      "all_category_codes": [
+        "XB",
+        "XB05",
+        "XB05C"
+      ],
+      "payment_standard": [
+        "168.16元(3000ml/袋)"
+      ],
+      "note": "限经尿道前列腺切除术及其他泌尿外\n科手术的术中冲洗。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_26",
+      "name": "非诺贝特酸胆碱缓释胶囊",
+      "sheet": "竞价药品部分",
+      "category_code": "XC10AB",
+      "category_name": "贝特类",
+      "all_category_codes": [
+        "XC",
+        "XC10",
+        "XC10A",
+        "XC10AB"
+      ],
+      "payment_standard": [
+        "1.36元(45mg (按C17H15ClO4计)/\n粒)；\n3.15元(135mg (按\nC17H15ClO4计)/粒)"
+      ],
+      "note": "限：  成人控制饮食基础上：  1. 降低重\n度高甘油三酯血症患者甘油三酯(TG)\n水平；  2.原发性高胆固醇血症或混合\n型血脂异常患者的治疗。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "竞价药品部分_31",
+      "name": "注射用头孢曲松钠/氯化钠注射液",
+      "sheet": "竞价药品部分",
+      "category_code": "XJ01DD",
+      "category_name": "第三代头孢菌素",
+      "all_category_codes": [
+        "XJ",
+        "XJ01",
+        "XJ01D",
+        "XJ01DD"
+      ],
+      "payment_standard": [
+        "20.00元(粉体室:按头孢曲松\n(C18H18N8O7S3)计1.0g；  液体\n室:氯化钠注射液\n100ml:0.9g/袋)；\n23.50元(粉体室:按头孢曲松\n(C18H18N8O7S3)计2.0g；  液体\n室:氯化钠注射液\n100ml:0.9g/袋)"
+      ],
+      "note": "",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_32",
+      "name": "注射用头孢他啶阿维巴坦钠",
+      "sheet": "竞价药品部分",
+      "category_code": "XJ01DD",
+      "category_name": "第三代头孢菌素",
+      "all_category_codes": [
+        "XJ",
+        "XJ01",
+        "XJ01D",
+        "XJ01DD"
+      ],
+      "payment_standard": [
+        "340.00元(2.5g (头孢他啶2.0g与\n阿维巴坦0.5g)/瓶)"
+      ],
+      "note": "",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_35",
+      "name": "磷酸特地唑胺片",
+      "sheet": "竞价药品部分",
+      "category_code": "XJ01XX",
+      "category_name": "其他抗菌药",
+      "all_category_codes": [
+        "XJ",
+        "XJ01",
+        "XJ01X",
+        "XJ01XX"
+      ],
+      "payment_standard": [
+        "108.91元(200mg/片)"
+      ],
+      "note": "限急性细菌性皮肤及皮肤软组织感染。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_40",
+      "name": "曲氟尿苷替匹嘧啶片",
+      "sheet": "竞价药品部分",
+      "category_code": "XL01BC",
+      "category_name": "嘧啶类似物",
+      "all_category_codes": [
+        "XL",
+        "XL01",
+        "XL01B",
+        "XL01BC"
+      ],
+      "payment_standard": [
+        "55.36元(每片含曲氟尿苷15mg与\n盐酸替匹嘧啶7.065mg/片)；\n69.00元(每片含曲氟尿苷20mg与\n盐酸替匹嘧啶9.420mg/片)"
+      ],
+      "note": "限：  既往接受过氟嘧啶类、  奥沙利铂\n和伊立替康为基础的化疗，  以及既往\n接受过或不适合接受抗血管内皮生长\n因子(VEGF)治疗、  抗表皮生长因子受\n体(EGFR)治疗(RAS野生型)的转移性结\n直肠癌(mCRC)患者  。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_44",
+      "name": "他克莫司颗粒",
+      "sheet": "竞价药品部分",
+      "category_code": "XL04AD",
+      "category_name": "钙神经素抑制剂",
+      "all_category_codes": [
+        "XL",
+        "XL04",
+        "XL04A",
+        "XL04AD"
+      ],
+      "payment_standard": [
+        "15.43元(1mg/袋)"
+      ],
+      "note": "限：  1.预防⼉童肝脏或肾脏移植术后\n的移植物排斥反应；  2.治疗⼉童肝脏\n或肾脏移植术后应用其他免疫抑制药\n物无法控制的移植物排斥反应。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "竞价药品部分_49",
+      "name": "氨己烯酸口服溶液用散",
+      "sheet": "竞价药品部分",
+      "category_code": "XN03AG",
+      "category_name": "脂肪酸衍生物",
+      "all_category_codes": [
+        "XN",
+        "XN03",
+        "XN03A",
+        "XN03AG"
+      ],
+      "payment_standard": [
+        "29.00元(500mg/袋)"
+      ],
+      "note": "限婴儿痉挛症。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_53",
+      "name": "丁苯那嗪片",
+      "sheet": "竞价药品部分",
+      "category_code": "XN05AX",
+      "category_name": "其他抗精神病药",
+      "all_category_codes": [
+        "XN",
+        "XN05",
+        "XN05A",
+        "XN05AX"
+      ],
+      "payment_standard": [
+        "7.59元(12.5mg/片)；\n12.90元(25mg/片)"
+      ],
+      "note": "限亨廷顿病相关的舞蹈症。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_56",
+      "name": "盐酸右美托咪定氯化钠注射液",
+      "sheet": "竞价药品部分",
+      "category_code": "XN05CM",
+      "category_name": "其他催眠镇静剂",
+      "all_category_codes": [
+        "XN",
+        "XN05",
+        "XN05C",
+        "XN05CM"
+      ],
+      "payment_standard": [
+        "27.27元(20ml:盐酸右美托咪定\n80µg (按C13H16N2计)与氯化钠\n0.18g/支)；\n55.00元(50ml:盐酸右美托咪定\n0.2mg (按C13H16N2计)与氯化钠\n0.45g/瓶)；\n93.50元(100ml:盐酸右美托咪定\n0.4mg (按C13H16N2计)与氯化钠\n0.9g/瓶)"
+      ],
+      "note": "限：  1.重症监护患者插管和机械通气\n时的镇静；  2.非插管患者术前和/或术\n中以及其他程序镇静。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_60",
+      "name": "草酸艾司西酞普兰口服溶液",
+      "sheet": "竞价药品部分",
+      "category_code": "XN06AB",
+      "category_name": "选择性5-羟色胺再摄取抑制剂",
+      "all_category_codes": [
+        "XN",
+        "XN06",
+        "XN06A",
+        "XN06AB"
+      ],
+      "payment_standard": [
+        "3. 18元(按\nC20H21FN2O计:5ml:5mg/瓶)；\n5.40元(按\nC20H21FN2O计:10ml:10mg/瓶)；\n36. 19元(按\nC20H21FN2O计:120ml:120mg/瓶)\n;\n61.52元(按\nC20H21FN2O计:240ml:240mg/瓶)"
+      ],
+      "note": "",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_63",
+      "name": "氯苯唑酸葡胺软胶囊",
+      "sheet": "竞价药品部分",
+      "category_code": "XN07X",
+      "category_name": "其他神经系统药物",
+      "all_category_codes": [
+        "XN",
+        "XN07",
+        "XN07X"
+      ],
+      "payment_standard": [
+        "255.85元(20mg/粒)"
+      ],
+      "note": "限成人转甲状腺素蛋白淀粉样变性多\n发性神经病I期症状患者。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "竞价药品部分_68",
+      "name": "氮䓬斯汀氟替卡松鼻喷雾剂",
+      "sheet": "竞价药品部分",
+      "category_code": "XR01AD",
+      "category_name": "皮质激素类",
+      "all_category_codes": [
+        "XR",
+        "XR01",
+        "XR01A",
+        "XR01AD"
+      ],
+      "payment_standard": [
+        "89.60元(每瓶120喷,每喷含盐酸\n氮䓬斯汀137µg和丙酸氟替卡松\n50µg)"
+      ],
+      "note": "限12岁及以上单一鼻用抗组胺药或糖\n皮质激素治疗效果不佳的中至重度季\n节性过敏性鼻炎和常年性过敏性鼻炎\n患者。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "竞价药品部分_71",
+      "name": "吸入用盐酸氨溴索溶液",
+      "sheet": "竞价药品部分",
+      "category_code": "XR05C",
+      "category_name": "不含复方镇咳药的祛痰药",
+      "all_category_codes": [
+        "XR",
+        "XR05",
+        "XR05C"
+      ],
+      "payment_standard": [
+        "8.50元(2ml:15mg/支)"
+      ],
+      "note": "",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    }
+  ]
+}

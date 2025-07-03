@@ -1,0 +1,1450 @@
+{
+  "categories": {
+    "ZA": {
+      "code": "ZA",
+      "name": "内科用药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "ZA01": {
+          "code": "ZA01",
+          "name": "解表剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {
+            "ZA01B": {
+              "code": "ZA01B",
+              "name": "辛凉解表剂",
+              "level": 3,
+              "parent_code": "ZA01",
+              "subcategories": {},
+              "medicine_count": 2
+            },
+            "ZA01C": {
+              "code": "ZA01C",
+              "name": "表里双解剂",
+              "level": 3,
+              "parent_code": "ZA01",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 3
+        },
+        "ZA03": {
+          "code": "ZA03",
+          "name": "泻下剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {
+            "ZA03B": {
+              "code": "ZA03B",
+              "name": "润肠通便剂",
+              "level": 3,
+              "parent_code": "ZA03",
+              "subcategories": {},
+              "medicine_count": 2
+            }
+          },
+          "medicine_count": 2
+        },
+        "ZA04": {
+          "code": "ZA04",
+          "name": "清热剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {
+            "ZA04B": {
+              "code": "ZA04B",
+              "name": "清热解毒剂",
+              "level": 3,
+              "parent_code": "ZA04",
+              "subcategories": {},
+              "medicine_count": 4
+            },
+            "ZA04C": {
+              "code": "ZA04C",
+              "name": "清脏腑热剂",
+              "level": 3,
+              "parent_code": "ZA04",
+              "subcategories": {
+                "ZA04CA": {
+                  "code": "ZA04CA",
+                  "name": "清热理肺剂",
+                  "level": 4,
+                  "parent_code": "ZA04C",
+                  "subcategories": {},
+                  "medicine_count": 1
+                },
+                "ZA04CD": {
+                  "code": "ZA04CD",
+                  "name": "清利肠胃湿热剂",
+                  "level": 4,
+                  "parent_code": "ZA04C",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 2
+            }
+          },
+          "medicine_count": 6
+        },
+        "ZA06": {
+          "code": "ZA06",
+          "name": "化痰、  止咳、  平喘剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {
+            "ZA06B": {
+              "code": "ZA06B",
+              "name": "理肺止咳剂",
+              "level": 3,
+              "parent_code": "ZA06",
+              "subcategories": {
+                "ZA06BC": {
+                  "code": "ZA06BC",
+                  "name": "宣肺止咳剂",
+                  "level": 4,
+                  "parent_code": "ZA06B",
+                  "subcategories": {},
+                  "medicine_count": 3
+                }
+              },
+              "medicine_count": 3
+            },
+            "ZA06C": {
+              "code": "ZA06C",
+              "name": "清热化痰剂",
+              "level": 3,
+              "parent_code": "ZA06",
+              "subcategories": {
+                "ZA06CA": {
+                  "code": "ZA06CA",
+                  "name": "清热化痰止咳",
+                  "level": 4,
+                  "parent_code": "ZA06C",
+                  "subcategories": {},
+                  "medicine_count": 4
+                },
+                "ZA06CC": {
+                  "code": "ZA06CC",
+                  "name": "清热化痰止惊",
+                  "level": 4,
+                  "parent_code": "ZA06C",
+                  "subcategories": {},
+                  "medicine_count": 1
+                }
+              },
+              "medicine_count": 5
+            }
+          },
+          "medicine_count": 8
+        },
+        "ZA09": {
+          "code": "ZA09",
+          "name": "扶正剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {
+            "ZA09C": {
+              "code": "ZA09C",
+              "name": "滋阴剂",
+              "level": 3,
+              "parent_code": "ZA09",
+              "subcategories": {},
+              "medicine_count": 1
+            },
+            "ZA09G": {
+              "code": "ZA09G",
+              "name": "益气养阴剂",
+              "level": 3,
+              "parent_code": "ZA09",
+              "subcategories": {},
+              "medicine_count": 5
+            },
+            "ZA09H": {
+              "code": "ZA09H",
+              "name": "益气复脉剂",
+              "level": 3,
+              "parent_code": "ZA09",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 7
+        },
+        "ZA10": {
+          "code": "ZA10",
+          "name": "安神剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {
+            "ZA10A": {
+              "code": "ZA10A",
+              "name": "养心安神剂",
+              "level": 3,
+              "parent_code": "ZA10",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        },
+        "ZA12": {
+          "code": "ZA12",
+          "name": "祛瘀剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {
+            "ZA12A": {
+              "code": "ZA12A",
+              "name": "益气活血剂",
+              "level": 3,
+              "parent_code": "ZA12",
+              "subcategories": {},
+              "medicine_count": 1
+            },
+            "ZA12C": {
+              "code": "ZA12C",
+              "name": "养血活血剂",
+              "level": 3,
+              "parent_code": "ZA12",
+              "subcategories": {},
+              "medicine_count": 1
+            },
+            "ZA12G": {
+              "code": "ZA12G",
+              "name": "化瘀宽胸剂",
+              "level": 3,
+              "parent_code": "ZA12",
+              "subcategories": {},
+              "medicine_count": 2
+            },
+            "ZA12H": {
+              "code": "ZA12H",
+              "name": "化瘀通脉剂",
+              "level": 3,
+              "parent_code": "ZA12",
+              "subcategories": {},
+              "medicine_count": 2
+            },
+            "ZA12I": {
+              "code": "ZA12I",
+              "name": "活血消癥剂",
+              "level": 3,
+              "parent_code": "ZA12",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 7
+        },
+        "ZA13": {
+          "code": "ZA13",
+          "name": "理气剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {
+            "ZA13A": {
+              "code": "ZA13A",
+              "name": "疏肝解郁剂",
+              "level": 3,
+              "parent_code": "ZA13",
+              "subcategories": {},
+              "medicine_count": 2
+            },
+            "ZA13B": {
+              "code": "ZA13B",
+              "name": "疏肝和胃剂",
+              "level": 3,
+              "parent_code": "ZA13",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 3
+        },
+        "ZA16": {
+          "code": "ZA16",
+          "name": "祛湿剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {
+            "ZA16B": {
+              "code": "ZA16B",
+              "name": "清热除湿剂",
+              "level": 3,
+              "parent_code": "ZA16",
+              "subcategories": {},
+              "medicine_count": 2
+            },
+            "ZA16F": {
+              "code": "ZA16F",
+              "name": "清热通淋剂",
+              "level": 3,
+              "parent_code": "ZA16",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 3
+        },
+        "ZA17": {
+          "code": "ZA17",
+          "name": "化浊降脂剂",
+          "level": 2,
+          "parent_code": "ZA",
+          "subcategories": {},
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 41
+    },
+    "ZB": {
+      "code": "ZB",
+      "name": "外科用药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "ZB01": {
+          "code": "ZB01",
+          "name": "清热剂",
+          "level": 2,
+          "parent_code": "ZB",
+          "subcategories": {
+            "ZB01B": {
+              "code": "ZB01B",
+              "name": "清热解毒剂",
+              "level": 3,
+              "parent_code": "ZB01",
+              "subcategories": {},
+              "medicine_count": 3
+            }
+          },
+          "medicine_count": 3
+        }
+      },
+      "medicine_count": 3
+    },
+    "ZC": {
+      "code": "ZC",
+      "name": "肿瘤用药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "ZC01": {
+          "code": "ZC01",
+          "name": "抗肿瘤药",
+          "level": 2,
+          "parent_code": "ZC",
+          "subcategories": {},
+          "medicine_count": 4
+        },
+        "ZC02": {
+          "code": "ZC02",
+          "name": "肿瘤辅助用药",
+          "level": 2,
+          "parent_code": "ZC",
+          "subcategories": {},
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 5
+    },
+    "ZD": {
+      "code": "ZD",
+      "name": "妇科用药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "ZD01": {
+          "code": "ZD01",
+          "name": "理血剂",
+          "level": 2,
+          "parent_code": "ZD",
+          "subcategories": {
+            "ZD01B": {
+              "code": "ZD01B",
+              "name": "活血化瘀剂",
+              "level": 3,
+              "parent_code": "ZD01",
+              "subcategories": {},
+              "medicine_count": 1
+            }
+          },
+          "medicine_count": 1
+        },
+        "ZD03": {
+          "code": "ZD03",
+          "name": "扶正剂",
+          "level": 2,
+          "parent_code": "ZD",
+          "subcategories": {},
+          "medicine_count": 2
+        }
+      },
+      "medicine_count": 3
+    },
+    "ZE": {
+      "code": "ZE",
+      "name": "眼科用药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "ZE02": {
+          "code": "ZE02",
+          "name": "扶正剂",
+          "level": 2,
+          "parent_code": "ZE",
+          "subcategories": {},
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 1
+    },
+    "ZF": {
+      "code": "ZF",
+      "name": "耳鼻喉科用药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "ZF02": {
+          "code": "ZF02",
+          "name": "鼻病",
+          "level": 2,
+          "parent_code": "ZF",
+          "subcategories": {},
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 1
+    },
+    "ZG": {
+      "code": "ZG",
+      "name": "骨伤科用药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "ZG01": {
+          "code": "ZG01",
+          "name": "活血化瘀剂",
+          "level": 2,
+          "parent_code": "ZG",
+          "subcategories": {},
+          "medicine_count": 1
+        },
+        "ZG03": {
+          "code": "ZG03",
+          "name": "补肾壮骨剂",
+          "level": 2,
+          "parent_code": "ZG",
+          "subcategories": {},
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 2
+    },
+    "ZI": {
+      "code": "ZI",
+      "name": "民族药",
+      "level": 1,
+      "parent_code": null,
+      "subcategories": {
+        "ZI01": {
+          "code": "ZI01",
+          "name": "藏药",
+          "level": 2,
+          "parent_code": "ZI",
+          "subcategories": {},
+          "medicine_count": 1
+        }
+      },
+      "medicine_count": 1
+    }
+  },
+  "medicines": [
+    {
+      "id": "协议中成药_5",
+      "name": "牛黄清感胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA01B",
+      "category_name": "辛凉解表剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA01",
+        "ZA01B"
+      ],
+      "payment_standard": [
+        "0.63元(0.3g/粒)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_6",
+      "name": "银翘清热片",
+      "sheet": "协议中成药",
+      "category_code": "ZA01B",
+      "category_name": "辛凉解表剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA01",
+        "ZA01B"
+      ],
+      "payment_standard": [
+        "2.90元(0.36g (相当于饮片\n1.22g)/片)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_8",
+      "name": "小儿豉翘清热糖浆",
+      "sheet": "协议中成药",
+      "category_code": "ZA01C",
+      "category_name": "表里双解剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA01",
+        "ZA01C"
+      ],
+      "payment_standard": [
+        "5.85元(每支装10ml(相当于饮片\n7.462g))"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_11",
+      "name": "芪黄通秘软胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA03B",
+      "category_name": "润肠通便剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA03",
+        "ZA03B"
+      ],
+      "payment_standard": [
+        "1.83元(0.5g/粒)"
+      ],
+      "note": "益气养血，  润肠通便 。  用于功能性便\n秘证属虚秘者。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_12",
+      "name": "济川煎颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZA03B",
+      "category_name": "润肠通便剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA03",
+        "ZA03B"
+      ],
+      "payment_standard": [
+        "11.26元(每袋装7g (相当于饮片\n21.82g))"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_15",
+      "name": "冬凌草滴丸",
+      "sheet": "协议中成药",
+      "category_code": "ZA04B",
+      "category_name": "清热解毒剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA04",
+        "ZA04B"
+      ],
+      "payment_standard": [
+        "0.18元(40mg/丸)"
+      ],
+      "note": "清热解毒,消肿散结,利咽止痛 。  用于\n热毒壅盛所致的咽喉肿痛、  声音嘶\n哑；  急性扁桃体炎、  急性咽炎轻症见\n上述证候者。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_16",
+      "name": "金银花口服液",
+      "sheet": "协议中成药",
+      "category_code": "ZA04B",
+      "category_name": "清热解毒剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA04",
+        "ZA04B"
+      ],
+      "payment_standard": [
+        "2.94元(10ml/支)；\n5.00元(20ml/支)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_17",
+      "name": "蓝芩口服液",
+      "sheet": "协议中成药",
+      "category_code": "ZA04B",
+      "category_name": "清热解毒剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA04",
+        "ZA04B"
+      ],
+      "payment_standard": [
+        "5.66元(10ml/支(每1ml相当于饮片2.12g))"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_18",
+      "name": "清肺排毒颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZA04B",
+      "category_name": "清热解毒剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA04",
+        "ZA04B"
+      ],
+      "payment_standard": [
+        "20.60元(15g (相当于饮片49g)/\n袋)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_21",
+      "name": "痰热清胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA04CA",
+      "category_name": "清热理肺剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA04",
+        "ZA04C",
+        "ZA04CA"
+      ],
+      "payment_standard": [
+        "4.09元(0.4g/粒)"
+      ],
+      "note": "清热，化痰 ，解毒 。  用于风温肺热病\n属风热袭肺证，症见发热 ，恶风，  咳\n嗽，  咯痰，  或咽痛，流涕 ，   口干等。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_23",
+      "name": "枳实总黄酮片",
+      "sheet": "协议中成药",
+      "category_code": "ZA04CD",
+      "category_name": "清利肠胃湿热剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA04",
+        "ZA04C",
+        "ZA04CD"
+      ],
+      "payment_standard": [
+        "2.49元(每片重0.29g (含枳实总\n黄酮95mg))"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_27",
+      "name": "小儿荆杏止咳颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZA06BC",
+      "category_name": "宣肺止咳剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA06",
+        "ZA06B",
+        "ZA06BC"
+      ],
+      "payment_standard": [
+        "10.71元(5g (相当于饮片\n18.33g)/袋)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_28",
+      "name": "九味止咳口服液",
+      "sheet": "协议中成药",
+      "category_code": "ZA06BC",
+      "category_name": "宣肺止咳剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA06",
+        "ZA06B",
+        "ZA06BC"
+      ],
+      "payment_standard": [
+        "4.15元(10ml/支(每1ml相当于饮片2.14g))"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_29",
+      "name": "小儿紫贝宣肺糖浆",
+      "sheet": "协议中成药",
+      "category_code": "ZA06BC",
+      "category_name": "宣肺止咳剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA06",
+        "ZA06B",
+        "ZA06BC"
+      ],
+      "payment_standard": [
+        "86.70元(100ml/瓶(每1ml相当于\n饮片0.72g))"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_32",
+      "name": "金花清感颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZA06CA",
+      "category_name": "清热化痰止咳",
+      "all_category_codes": [
+        "ZA",
+        "ZA06",
+        "ZA06C",
+        "ZA06CA"
+      ],
+      "payment_standard": [
+        "8.90元(5g (相当于饮片17.3g)/\n袋)"
+      ],
+      "note": "疏风宣肺，清热解毒 。  用于单纯型流\n行性感冒轻症，  中医辨证属风热犯肺\n证者，症见发热 ，  头痛 ，全身酸痛，\n咽痛，  咳嗽 ，恶风或恶寒 ，  鼻塞流\n涕，舌质红 ，舌苔薄黄 ，脉数 。  在新\n型冠状病毒肺炎的常规治疗中，可用\n于轻型、  普通型引起的发热、  咳嗽、\n乏力。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_33",
+      "name": "化湿败毒颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZA06CA",
+      "category_name": "清热化痰止咳",
+      "all_category_codes": [
+        "ZA",
+        "ZA06",
+        "ZA06C",
+        "ZA06CA"
+      ],
+      "payment_standard": [
+        "9.90元(5g (相当于饮片17.13g)/\n袋)"
+      ],
+      "note": "化湿解毒，  宣肺泄热 。  用于湿毒侵肺\n所致的疫病，症见发热、  咳嗽、  乏力\n、  胸闷、  恶心、  肌肉酸痛、  咽干咽痛\n、  食欲减退、  口中粘腻不爽等。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_34",
+      "name": "宣肺败毒颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZA06CA",
+      "category_name": "清热化痰止咳",
+      "all_category_codes": [
+        "ZA",
+        "ZA06",
+        "ZA06C",
+        "ZA06CA"
+      ],
+      "payment_standard": [
+        "*"
+      ],
+      "note": "宣肺化湿，清热透邪，  泻肺解毒 。  用\n于湿毒郁肺所致的疫病 。  症见发热，\n咳嗽，  咽部不适 ，  喘促气短 ，  乏力，\n纳呆，  大便不畅；  舌质暗红、  苔黄腻\n或黄燥，脉滑数或弦滑。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_35",
+      "name": "散寒化湿颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZA06CA",
+      "category_name": "清热化痰止咳",
+      "all_category_codes": [
+        "ZA",
+        "ZA06",
+        "ZA06C",
+        "ZA06CA"
+      ],
+      "payment_standard": [
+        "8.28元(每袋装10g (相当于饮片\n48g))"
+      ],
+      "note": "散寒化湿、  宣肺透邪、  辟秽化浊、  解\n毒通络 。  用于寒湿郁肺所致疫病，症\n见发热，  乏力 ，周身酸痛 ，  咳嗽，  咯\n痰，胸闷憋气 ，纳呆，恶心，  呕吐，\n腹泻，  大便粘腻不爽；  舌质淡胖齿痕\n或淡红，舌苔白厚腻或腐腻 ，脉滑或\n濡。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_37",
+      "name": "小儿牛黄清心散",
+      "sheet": "协议中成药",
+      "category_code": "ZA06CC",
+      "category_name": "清热化痰止惊",
+      "all_category_codes": [
+        "ZA",
+        "ZA06",
+        "ZA06C",
+        "ZA06CC"
+      ],
+      "payment_standard": [
+        "2.36元(0.3g/袋)；\n4.01元(0.6g/袋)"
+      ],
+      "note": "限高热神昏的急救、  抢救时使用。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_40",
+      "name": "一贯煎颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZA09C",
+      "category_name": "滋阴剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA09",
+        "ZA09C"
+      ],
+      "payment_standard": [
+        "9.22元(每袋装12g (相当于饮片\n15.55g))"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_42",
+      "name": "参乌益肾片",
+      "sheet": "协议中成药",
+      "category_code": "ZA09G",
+      "category_name": "益气养阴剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA09",
+        "ZA09G"
+      ],
+      "payment_standard": [
+        "1.27元(0.4g/片)"
+      ],
+      "note": "限慢性肾衰竭患者。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_43",
+      "name": "桑枝总生物碱片",
+      "sheet": "协议中成药",
+      "category_code": "ZA09G",
+      "category_name": "益气养阴剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA09",
+        "ZA09G"
+      ],
+      "payment_standard": [
+        "3.92元(50mg/片)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_44",
+      "name": "通脉降糖胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA09G",
+      "category_name": "益气养阴剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA09",
+        "ZA09G"
+      ],
+      "payment_standard": [
+        "0.46元(0.4g/粒)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_45",
+      "name": "参龙宁心胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA09G",
+      "category_name": "益气养阴剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA09",
+        "ZA09G"
+      ],
+      "payment_standard": [
+        "0.35元(0.5g/粒)"
+      ],
+      "note": "限冠心病和成年人恢复期病毒型心肌\n炎出现的轻度或中度室性过早搏动见\n上述证候者。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_46",
+      "name": "芪蛭益肾胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA09G",
+      "category_name": "益气养阴剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA09",
+        "ZA09G"
+      ],
+      "payment_standard": [
+        "2.17元(0.38g (相当于饮片\n2.86g)/粒)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_48",
+      "name": "注射用益气复脉(冻干)",
+      "sheet": "协议中成药",
+      "category_code": "ZA09H",
+      "category_name": "益气复脉剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA09",
+        "ZA09H"
+      ],
+      "payment_standard": [
+        "15.92元(0.65g/瓶)"
+      ],
+      "note": "限二级及以上医疗机构冠心病心绞痛\n及冠心病所致左心功能不全Ⅱ-Ⅲ级的\n患者，单次住院最多支付14天。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_51",
+      "name": "益肾养心安神片",
+      "sheet": "协议中成药",
+      "category_code": "ZA10A",
+      "category_name": "养心安神剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA10",
+        "ZA10A"
+      ],
+      "payment_standard": [
+        "1.97元(0.4g (相当于饮片1.4g)/\n片)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_54",
+      "name": "杜蛭丸",
+      "sheet": "协议中成药",
+      "category_code": "ZA12A",
+      "category_name": "益气活血剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA12",
+        "ZA12A"
+      ],
+      "payment_standard": [
+        "6.33元(5g/25粒)"
+      ],
+      "note": "",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_56",
+      "name": "丹红注射液",
+      "sheet": "协议中成药",
+      "category_code": "ZA12C",
+      "category_name": "养血活血剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA12",
+        "ZA12C"
+      ],
+      "payment_standard": [
+        "4.94元(2ml/支)；\n16.92元(10ml/支)；\n28.76元(20ml/支)"
+      ],
+      "note": "限二级及以上医疗机构。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_58",
+      "name": "注射用丹参多酚酸",
+      "sheet": "协议中成药",
+      "category_code": "ZA12G",
+      "category_name": "化瘀宽胸剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA12",
+        "ZA12G"
+      ],
+      "payment_standard": [
+        "54.41元(0.13g/支)"
+      ],
+      "note": "限二级及以上医疗机构脑梗死恢复期\n患者，单次住院最多支付14天。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_59",
+      "name": "注射用丹参多酚酸盐",
+      "sheet": "协议中成药",
+      "category_code": "ZA12G",
+      "category_name": "化瘀宽胸剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA12",
+        "ZA12G"
+      ],
+      "payment_standard": [
+        "27.19元(每瓶装50mg (含丹参乙\n酸镁40mg))；\n46.23元(每瓶装100mg (含丹参乙\n酸镁80mg))；\n78.59元(每瓶装200mg (含丹参乙\n酸镁160mg))"
+      ],
+      "note": "限二级及以上医疗机构。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_61",
+      "name": "血必净注射液",
+      "sheet": "协议中成药",
+      "category_code": "ZA12H",
+      "category_name": "化瘀通脉剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA12",
+        "ZA12H"
+      ],
+      "payment_standard": [
+        "22.08元(10ml/支)"
+      ],
+      "note": "限二级及以上医疗机构。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_62",
+      "name": "丹灯通脑软胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA12H",
+      "category_name": "化瘀通脉剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA12",
+        "ZA12H"
+      ],
+      "payment_standard": [
+        "0.62元(0.55g/粒)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_64",
+      "name": "蛭蛇通络胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA12I",
+      "category_name": "活血消癥剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA12",
+        "ZA12I"
+      ],
+      "payment_standard": [
+        "1.65元(0.5g/粒)"
+      ],
+      "note": "益气活血，  息风通络 。  用于中风病中\n经络(轻中度脑梗塞)恢复期气虚血瘀\n证 。  症见半身不遂 ，偏身麻木 ，  口舌\n歪斜，舌强语蹇 ，   自汗、  气短乏力，\n脉沉细涩或弦。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_67",
+      "name": "解郁除烦胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA13A",
+      "category_name": "疏肝解郁剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA13",
+        "ZA13A"
+      ],
+      "payment_standard": [
+        "1.85元(0.4g (相当于饮片\n1.55g)/粒)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_68",
+      "name": "参葛补肾胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA13A",
+      "category_name": "疏肝解郁剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA13",
+        "ZA13A"
+      ],
+      "payment_standard": [
+        "4.35元(每粒装0.32g (相当于饮片3.6g))"
+      ],
+      "note": "益气、  养阴、  补肾 。  适用于轻、  中度\n抑郁症中医辨证属气阴两虚、  肾气不\n足证，症见情绪低落、  多思善虑、  言\n语动作减少、  目光迟滞、  健忘、  食少\n、  心悸胆怯、  少寐多梦、  心烦，舌质\n淡红或偏红、  舌苔白或花剥 ，脉细弱\n等。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_70",
+      "name": "七蕊胃舒胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA13B",
+      "category_name": "疏肝和胃剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA13",
+        "ZA13B"
+      ],
+      "payment_standard": [
+        "3.01元(0.5g (相当于饮片0.5g)/\n粒)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_73",
+      "name": "虎贞清风胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA16B",
+      "category_name": "清热除湿剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA16",
+        "ZA16B"
+      ],
+      "payment_standard": [
+        "2.99元(每粒装0.40g (相当于饮片2.33g))"
+      ],
+      "note": "清热利湿，化瘀利浊，  滋补肝肾 。  用\n于轻中度急性痛风性关节炎 。  中医辨\n证属湿热蕴结证，症见关节疼痛、  肿\n胀、  发热、  活动受限、  口渴、  烦闷不\n安，舌红、  苔黄或黄腻、  脉滑数。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_74",
+      "name": "秦威颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZA16B",
+      "category_name": "清热除湿剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA16",
+        "ZA16B"
+      ],
+      "payment_standard": [
+        "8.26元(12g (相当于饮片\n30g)/袋)"
+      ],
+      "note": "清热除湿祛风，  活血通络止痛 。  用于\n急性痛风性关节炎风湿郁热证，症见\n关节疼痛、  关节肿胀、  关节局部发热\n、  口渴喜饮，舌质红、  苔黄、  脉滑数\n。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_76",
+      "name": "广金钱草总黄酮胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA16F",
+      "category_name": "清热通淋剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA16",
+        "ZA16F"
+      ],
+      "payment_standard": [
+        "4.76元(每粒装0.2g (含广金钱草\n总黄酮提取物133mg))"
+      ],
+      "note": "清热祛湿，利尿排石 。  用于输尿管结\n石中医辨证属湿热蕴结证者。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_78",
+      "name": "降脂通络软胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZA17",
+      "category_name": "化浊降脂剂",
+      "all_category_codes": [
+        "ZA",
+        "ZA17"
+      ],
+      "payment_standard": [
+        "0.70元(50mg/粒)"
+      ],
+      "note": "活血行气，  降脂祛浊 。  用于高脂血症\n属血瘀气滞证者，症见胸胁胀痛、  心\n前区刺痛、  胸闷、  舌尖边有瘀点或瘀\n斑、  脉弦或涩。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_82",
+      "name": "黄蜀葵花总黄酮口腔贴片",
+      "sheet": "协议中成药",
+      "category_code": "ZB01B",
+      "category_name": "清热解毒剂",
+      "all_category_codes": [
+        "ZB",
+        "ZB01",
+        "ZB01B"
+      ],
+      "payment_standard": [
+        "1.75元(每片重75mg (含黄蜀葵花\n总黄酮提取物20mg))"
+      ],
+      "note": "清心泄热 。  用于心脾积热所致轻型复\n发性口腔溃疡(轻型复发性阿弗他溃\n疡) ，症见口腔黏膜溃疡局部红肿、  灼\n热疼痛等。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_83",
+      "name": "连榆烧伤膏",
+      "sheet": "协议中成药",
+      "category_code": "ZB01B",
+      "category_name": "清热解毒剂",
+      "all_category_codes": [
+        "ZB",
+        "ZB01",
+        "ZB01B"
+      ],
+      "payment_standard": [
+        "100.00元(25g/支)"
+      ],
+      "note": "清热解毒，  生肌止痛 。  用于浅Ⅱ °、\n深Ⅱ °烧烫伤创面的治疗 ，用药面积\n不宜超出体表面积的1%。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_84",
+      "name": "儿茶上清丸",
+      "sheet": "协议中成药",
+      "category_code": "ZB01B",
+      "category_name": "清热解毒剂",
+      "all_category_codes": [
+        "ZB",
+        "ZB01",
+        "ZB01B"
+      ],
+      "payment_standard": [
+        "1.39元(每丸重0.14g (相当于饮片0.16g))"
+      ],
+      "note": "清热退火，解毒敛疮，止痛 。  用于轻\n型复发性阿弗他溃疡上焦实热证 。  症\n见：   口舌生疮 ，溃疡疼痛 ，   口渴欲\n饮，  口粘口臭 ，舌质红 ，舌苔黄或黄\n腻，脉弦洪或弦数。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_87",
+      "name": "复方黄黛片",
+      "sheet": "协议中成药",
+      "category_code": "ZC01",
+      "category_name": "抗肿瘤药",
+      "all_category_codes": [
+        "ZC",
+        "ZC01"
+      ],
+      "payment_standard": [
+        "9.94元(0.27g/片)"
+      ],
+      "note": "限初治的急性早幼粒细胞白血病。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_88",
+      "name": "康莱特注射液",
+      "sheet": "协议中成药",
+      "category_code": "ZC01",
+      "category_name": "抗肿瘤药",
+      "all_category_codes": [
+        "ZC",
+        "ZC01"
+      ],
+      "payment_standard": [
+        "128.90元(100ml:10g/支)"
+      ],
+      "note": "限二级及以上医疗机构。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_89",
+      "name": "康艾注射液",
+      "sheet": "协议中成药",
+      "category_code": "ZC01",
+      "category_name": "抗肿瘤药",
+      "all_category_codes": [
+        "ZC",
+        "ZC01"
+      ],
+      "payment_standard": [
+        "11.73元(5ml/支)；\n19.94元(10ml/支)；\n33.90元(20ml/支)"
+      ],
+      "note": "限二级及以上医疗机构说明书标明恶\n性肿瘤的中晚期治疗。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_90",
+      "name": "淫羊藿素软胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZC01",
+      "category_name": "抗肿瘤药",
+      "all_category_codes": [
+        "ZC",
+        "ZC01"
+      ],
+      "payment_standard": [
+        "17.00元(每粒0.4g (含淫羊藿素\n100mg))"
+      ],
+      "note": "限不适合或患者拒绝接受标准治疗,且\n既往未接受过全身系统性治疗的、  不\n可切除的肝细胞癌，  患者外周血复合\n标志物满足以下检测指标的至少两\n项：  AFP≥400 ng/mL；  TNF- α <2.5\npg/mL；  IFN- γ ≥7.0 pg/mL。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_92",
+      "name": "注射用黄芪多糖",
+      "sheet": "协议中成药",
+      "category_code": "ZC02",
+      "category_name": "肿瘤辅助用药",
+      "all_category_codes": [
+        "ZC",
+        "ZC02"
+      ],
+      "payment_standard": [
+        "171.18元(250mg/支)"
+      ],
+      "note": "限二级及以上医疗机构肿瘤患者，单\n次住院最多支付14天。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_96",
+      "name": "温经汤颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZD01B",
+      "category_name": "活血化瘀剂",
+      "all_category_codes": [
+        "ZD",
+        "ZD01",
+        "ZD01B"
+      ],
+      "payment_standard": [
+        "12.00元(每袋装10g (每袋相当于\n饮片20g))"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_98",
+      "name": "芪胶调经颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZD03",
+      "category_name": "扶正剂",
+      "all_category_codes": [
+        "ZD",
+        "ZD03"
+      ],
+      "payment_standard": [
+        "20.00元(每袋装8g (相当于饮片\n14.08g))"
+      ],
+      "note": "益气补血、  止血调经 。  用于上环所致\n经期延长中医辨证属气血两虚证，症\n见经血过期不净，  月经色淡 ，神疲乏\n力，头晕眼花 ，少腹坠胀 ，舌淡苔薄\n白、  脉细弱。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_101",
+      "name": "通络明目胶囊",
+      "sheet": "协议中成药",
+      "category_code": "ZE02",
+      "category_name": "扶正剂",
+      "all_category_codes": [
+        "ZE",
+        "ZE02"
+      ],
+      "payment_standard": [
+        "2.17元(0.4g/粒)"
+      ],
+      "note": "限2型糖尿病视网膜病变单纯性型。",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_104",
+      "name": "益气通窍丸",
+      "sheet": "协议中成药",
+      "category_code": "ZF02",
+      "category_name": "鼻病",
+      "all_category_codes": [
+        "ZF",
+        "ZF02"
+      ],
+      "payment_standard": [
+        "7.58元(每20丸重3g (相当于饮片\n9.12g))"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_107",
+      "name": "五虎口服液",
+      "sheet": "协议中成药",
+      "category_code": "ZG01",
+      "category_name": "活血化瘀剂",
+      "all_category_codes": [
+        "ZG",
+        "ZG01"
+      ],
+      "payment_standard": [
+        "11.31元(10ml/支)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_109",
+      "name": "玄七健骨片",
+      "sheet": "协议中成药",
+      "category_code": "ZG03",
+      "category_name": "补肾壮骨剂",
+      "all_category_codes": [
+        "ZG",
+        "ZG03"
+      ],
+      "payment_standard": [
+        "2.82元(0.45g (相当于饮片\n2.83g)/片)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_112",
+      "name": "关黄母颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZD03",
+      "category_name": "扶正剂",
+      "all_category_codes": [
+        "ZD",
+        "ZD03"
+      ],
+      "payment_standard": [
+        "4.28元(9g (相当于饮片\n4.8g)/袋)"
+      ],
+      "note": "补益肝肾，  滋阴降火 。  用于女性更年\n期综合征(绝经前后诸证)中医辨证属\n肝肾阴虚证，症见烘热汗出 ，  头晕，\n耳鸣，腰膝酸软或足跟痛 ，少寐多\n梦 ，  急躁易怒等。",
+      "validity_period": "2024年1月1日至\n2025年12月31日"
+    },
+    {
+      "id": "协议中成药_113",
+      "name": "坤心宁颗粒",
+      "sheet": "协议中成药",
+      "category_code": "ZD03",
+      "category_name": "扶正剂",
+      "all_category_codes": [
+        "ZD",
+        "ZD03"
+      ],
+      "payment_standard": [
+        "9.30元(6g (相当于饮片20g)/袋)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    },
+    {
+      "id": "协议中成药_116",
+      "name": "如意珍宝片",
+      "sheet": "协议中成药",
+      "category_code": "ZI01",
+      "category_name": "藏药",
+      "all_category_codes": [
+        "ZI",
+        "ZI01"
+      ],
+      "payment_standard": [
+        "1.79元(0.5g/片)"
+      ],
+      "note": "",
+      "validity_period": "2025年1月1日至\n2026年12月31日"
+    }
+  ]
+}
