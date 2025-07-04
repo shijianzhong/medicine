@@ -93,7 +93,7 @@ function App() {
 
   // 密码验证函数
   const handlePasswordSubmit = () => {
-    if (password === 'ivwapgFx') {
+    if (password === '123123') {
       setIsAuthenticated(true);
       setPasswordError('');
       localStorage.setItem('medicine_auth', 'true');
@@ -245,9 +245,13 @@ function App() {
     if (search && !med.name.includes(search)) return false;
     // 分类过滤
     if (selectedCategory && !selectedSubcategory) {
-      // 父级分类：只要药品的all_category_codes包含任一子孙分类编码即可
+      // 检查药品是否属于选中的分类或其子分类
       const codes = Array.isArray(med.all_category_codes) ? med.all_category_codes.map(c => String(c).trim().toUpperCase()) : [];
-      return descendantCodes.some(code => codes.includes(String(code).trim().toUpperCase()));
+      const medCategoryCode = med.category_code ? String(med.category_code).trim().toUpperCase() : '';
+      
+      // 如果药品的分类编码直接匹配选中的分类，或者包含在子孙分类中
+      return medCategoryCode === String(selectedCategory).trim().toUpperCase() || 
+             descendantCodes.some(code => codes.includes(String(code).trim().toUpperCase()));
     }
     if (selectedSubcategory) {
       return String(med.subcategory_code).trim().toUpperCase() === String(selectedSubcategory).trim().toUpperCase();
@@ -256,27 +260,55 @@ function App() {
   });
   // 调试输出
   console.log('当前分类:', selectedCategory, '下级编码:', descendantCodes, '过滤后药品数:', filteredMedicines.length, filteredMedicines.slice(0, 5));
+  
+  // 如果分类搜索有内容，显示搜索结果统计
+  const searchResultCount = categorySearch ? searchCategories(sheetData.categories, categorySearch).length : 0;
 
   // 分页数据
   const total = filteredMedicines.length;
   const totalPages = Math.ceil(total / pageSize);
   const pagedMedicines = filteredMedicines.slice((page-1)*pageSize, page*pageSize);
 
+  // 递归搜索分类
+  function searchCategories(categories: Record<string, Category>, searchTerm: string): Category[] {
+    const results: Category[] = [];
+    
+    Object.values(categories).forEach((cat) => {
+      // 检查当前分类是否匹配
+      if (cat.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+        results.push(cat);
+      }
+      
+      // 递归搜索子分类
+      if (cat.subcategories && Object.keys(cat.subcategories).length > 0) {
+        results.push(...searchCategories(cat.subcategories, searchTerm));
+      }
+    });
+    
+    return results;
+  }
+
   // 递归渲染分类树
   function renderCategoryTree(categories: Record<string, Category>, level = 0, isMobileDrawer = false) {
     // 过滤分类
-    const filteredCategories = Object.values(categories).filter((cat: Category) => {
-      if (!categorySearch) return true;
-      return cat.name.toLowerCase().includes(categorySearch.toLowerCase());
-    });
+    let filteredCategories: Category[];
+    if (categorySearch) {
+      // 如果有搜索词，递归搜索所有层级
+      filteredCategories = searchCategories(categories, categorySearch);
+    } else {
+      // 没有搜索词时，显示当前层级的分类
+      filteredCategories = Object.values(categories);
+    }
 
     return filteredCategories.map((cat: Category) => {
       const expanded = expandedCategories[cat.code] ?? false;
       const hasChildren = cat.subcategories && Object.keys(cat.subcategories).length > 0;
+      const isSelected = selectedCategory === cat.code;
+      
       return (
         <div key={cat.code} style={{ marginLeft: level * 12 }}>
           <div
-            className={`flex items-center cursor-pointer py-1 px-2 rounded group ${selectedCategory === cat.code ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : ''}`}
+            className={`flex items-center cursor-pointer py-1 px-2 rounded group ${isSelected ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'hover:bg-gray-100 dark:hover:bg-gray-700'}`}
             style={{ WebkitOverflowScrolling: 'touch' }}
             onClick={() => {
               setSelectedCategory(cat.code);
@@ -287,7 +319,7 @@ function App() {
           >
             {hasChildren && (
               <span
-                className="mr-1 text-xs select-none text-gray-600 dark:text-gray-400"
+                className="mr-1 text-xs select-none text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
                 onClick={e => {
                   e.stopPropagation();
                   setExpandedCategories(prev => ({ ...prev, [cat.code]: !expanded }));
@@ -492,6 +524,11 @@ function App() {
                         className="pl-8 h-8 text-xs border-gray-300 dark:border-gray-600 focus:ring-1 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 min-w-0"
                       />
                     </div>
+                    {categorySearch && (
+                      <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                        找到 {searchResultCount} 个分类
+                      </div>
+                    )}
                   </div>
                   <div className="flex-1 min-h-0 overflow-y-auto pr-2 space-y-1 w-full min-w-0 overflow-x-auto">
                     <div className="min-w-max flex flex-col">
@@ -536,6 +573,11 @@ function App() {
                           className="pl-8 h-8 text-xs border-gray-300 dark:border-gray-600 focus:ring-1 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 min-w-0"
                         />
                       </div>
+                      {categorySearch && (
+                        <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                          找到 {searchResultCount} 个分类
+                        </div>
+                      )}
                     </div>
                     {/* 分类树内容 */}
                     <div className="flex-1 min-h-0 overflow-y-auto pr-2 min-w-0 overflow-x-auto">
@@ -696,13 +738,13 @@ function App() {
         </div>
         
         {/* 访问统计 */}
-        <div className="mt-8 text-center">
+        {/* <div className="mt-8 text-center">
           <div className="inline-flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-full">
             <span id="busuanzi_container_site_pv">
               本站总访问量 <span id="busuanzi_value_site_pv" className="font-semibold text-blue-600 dark:text-blue-400">-</span> 次
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
