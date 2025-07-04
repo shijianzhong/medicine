@@ -2,11 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white text-black;
+html {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
-强制覆盖所有滚动条样式 - 完全隐藏
+body {
+  @apply bg-white text-black;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* 强制覆盖所有滚动条样式 - 完全隐藏 */
 * {
   scrollbar-width: none !important;
 }

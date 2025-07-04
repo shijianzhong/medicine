@@ -57,10 +57,8 @@ function App() {
   const [page, setPage] = useState(1);
   const pageSize = 8;
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [disclaimerOpen, setDisclaimerOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [password, setPassword] = useState('');
-  const [passwordError, setPasswordError] = useState('');
   const categoryRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   // 主题初始化
@@ -91,29 +89,7 @@ function App() {
     console.log('HTML classList:', document.documentElement.classList.toString());
   };
 
-  // 密码验证函数
-  const handlePasswordSubmit = () => {
-    if (password === '123123') {
-      setIsAuthenticated(true);
-      setPasswordError('');
-      localStorage.setItem('medicine_auth', 'true');
-    } else {
-      setPasswordError('密码错误，请重新输入');
-      setPassword('');
-    }
-  };
-
-  // 检查是否已认证
   useEffect(() => {
-    const savedAuth = localStorage.getItem('medicine_auth');
-    if (savedAuth === 'true') {
-      setIsAuthenticated(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!isAuthenticated) return;
-    
     const loadData = async () => {
       try {
         // 加载所有sheet的数据
@@ -136,9 +112,8 @@ function App() {
         console.error('加载数据失败:', error);
       }
     };
-    
     loadData();
-  }, [isAuthenticated]);
+  }, []);
 
   useEffect(() => {
     setSelectedCategory(null);
@@ -156,47 +131,6 @@ function App() {
       categoryRefs.current[selectedCategory]?.scrollIntoView({ block: 'center', behavior: 'smooth' });
     }
   }, [selectedCategory]);
-
-  // 密码验证界面
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
-        <div className="max-w-md w-full mx-auto p-6">
-          <Card className="rounded-xl shadow-lg bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
-            <CardHeader className="text-center">
-              <CardTitle className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                药品目录查询系统
-              </CardTitle>
-              <p className="text-gray-600 dark:text-gray-400">
-                请输入访问密码
-              </p>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="space-y-2">
-                <Input
-                  type="password"
-                  placeholder="请输入密码"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  onKeyPress={(e) => e.key === 'Enter' && handlePasswordSubmit()}
-                  className="w-full h-12 text-center text-lg border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
-                />
-                {passwordError && (
-                  <p className="text-red-500 text-sm text-center">{passwordError}</p>
-                )}
-              </div>
-              <Button 
-                onClick={handlePasswordSubmit}
-                className="w-full h-12 bg-blue-600 dark:bg-blue-700 hover:bg-blue-700 dark:hover:bg-blue-800 text-white font-semibold"
-              >
-                进入系统
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-    );
-  }
 
   if (!medicineData) {
     return (
@@ -328,7 +262,7 @@ function App() {
                 {expanded ? '▼' : '▶'}
               </span>
             )}
-            <span className="inline-block text-gray-900 dark:text-gray-100" title={cat.name}>
+            <span className="inline-block text-gray-900 dark:text-gray-100 truncate max-w-full" title={cat.name}>
               {cat.name} ({cat.medicine_count})
             </span>
           </div>
@@ -440,7 +374,7 @@ function App() {
               <div className="flex items-center gap-4 mb-1">
                 <div className="text-gray-500 dark:text-gray-400 text-base">查询医保药品目录信息(2024)</div>
                 {selectedCategory && (
-                  <div className="text-sm px-2 py-0.5 bg-blue-50 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-700 rounded inline-block max-w-full truncate">
+                  <div className="text-sm px-2 py-0.5 bg-blue-50 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-700 rounded inline-block max-w-full overflow-hidden">
                     <span className="font-medium">当前分类：</span>
                     {(() => {
                       const category = findCategory(selectedCategory, sheetData.categories);
@@ -457,12 +391,12 @@ function App() {
                         currentCat = currentCat.parent_code ? findCategory(currentCat.parent_code, sheetData.categories) : null;
                       }
                       return (
-                        <span className="inline-flex flex-wrap items-center gap-1">
+                        <span className="inline-flex flex-wrap items-center gap-1 max-w-full">
                           {categoryPath.map((cat, index) => (
                             <React.Fragment key={cat.code}>
-                              <span className="font-medium">{cat.name}({cat.count})</span>
+                              <span className="font-medium truncate">{cat.name}({cat.count})</span>
                               {index < categoryPath.length - 1 && (
-                                <span className="text-blue-300 dark:text-blue-400">→</span>
+                                <span className="text-blue-300 dark:text-blue-400 flex-shrink-0">→</span>
                               )}
                             </React.Fragment>
                           ))}
@@ -530,8 +464,8 @@ function App() {
                       </div>
                     )}
                   </div>
-                  <div className="flex-1 min-h-0 overflow-y-auto pr-2 space-y-1 w-full min-w-0 overflow-x-auto">
-                    <div className="min-w-max flex flex-col">
+                  <div className="flex-1 min-h-0 overflow-y-auto pr-2 space-y-1 w-full min-w-0">
+                    <div className="w-full flex flex-col">
                       {renderCategoryTree(sheetData.categories, 0, false)}
                     </div>
                   </div>
@@ -580,8 +514,8 @@ function App() {
                       )}
                     </div>
                     {/* 分类树内容 */}
-                    <div className="flex-1 min-h-0 overflow-y-auto pr-2 min-w-0 overflow-x-auto">
-                      <div className="min-w-max flex flex-col">
+                    <div className="flex-1 min-h-0 overflow-y-auto pr-2 min-w-0">
+                      <div className="w-full flex flex-col">
                         {renderCategoryTree(sheetData.categories, 0, true)}
                       </div>
                     </div>
@@ -591,6 +525,84 @@ function App() {
               <div className="flex-1" onClick={() => setDrawerOpen(false)} />
             </div>
           )}
+
+          {/* 数据来源和免责声明弹窗 */}
+          {disclaimerOpen && (
+            <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-6">
+                    <h2 className="text-xl font-bold text-gray-900 dark:text-white">数据来源与免责声明</h2>
+                    <button
+                      onClick={() => setDisclaimerOpen(false)}
+                      className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 text-2xl font-bold"
+                    >
+                      ×
+                    </button>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    {/* 数据来源 */}
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">数据来源</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                        本系统数据来源于国家医疗保障局官方网站发布的《国家基本医疗保险、工伤保险和生育保险药品目录（2024年）》。
+                        数据包括西药部分、中成药部分、协议西药、协议中成药、竞价药品部分等完整目录信息。
+                      </p>
+                    </div>
+
+                    {/* 分隔线 */}
+                    <div className="border-t border-gray-200 dark:border-gray-700"></div>
+
+                    {/* 免责声明 */}
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">免责声明</h3>
+                      <div className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-3">
+                        <p>
+                          <span className="font-medium">1.</span> 本系统仅提供药品目录查询服务，数据仅供参考，具体报销政策请以当地医保部门规定为准。
+                        </p>
+                        <p>
+                          <span className="font-medium">2.</span> 药品信息可能存在更新延迟，建议在使用前与医疗机构或医保部门核实最新信息。
+                        </p>
+                        <p>
+                          <span className="font-medium">3.</span> 本系统不承担因使用本系统信息而产生的任何医疗、法律或经济责任。
+                        </p>
+                        <p>
+                          <span className="font-medium">4.</span> 如发现数据错误或需要更新，请联系相关医保部门进行核实和更正。
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* 官方链接 */}
+                    <div className="text-center pt-4">
+                      <a
+                        href="http://www.nhsa.gov.cn/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors text-sm font-medium"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
+                        </svg>
+                        访问国家医疗保障局官网
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* 关闭按钮 */}
+                  <div className="mt-6 text-center">
+                    <button
+                      onClick={() => setDisclaimerOpen(false)}
+                      className="px-6 py-2 bg-blue-600 dark:bg-blue-700 hover:bg-blue-700 dark:hover:bg-blue-800 text-white rounded-lg transition-colors"
+                    >
+                      我知道了
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* 右侧药品列表 */}
           <div className="lg:col-span-3">
             <Card className="rounded-xl shadow-md bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
@@ -630,7 +642,7 @@ function App() {
               </CardHeader>
               <CardContent>
                 {/* 药品表格/卡片化 */}
-                <div className="sm:overflow-x-auto">
+                <div className="overflow-x-auto">
                   {/* 移动端卡片化，PC端表格 */}
                   <div className="sm:hidden flex flex-col gap-3">
                     {pagedMedicines.map((med) => (
@@ -712,24 +724,26 @@ function App() {
 
                 {/* 分页 */}
                 {totalPages > 1 && (
-                  <div className="mt-6 flex justify-center">
-                    <Pagination>
-                      <PaginationContent className="gap-1 sm:gap-2">
-                        <PaginationItem>
-                          <PaginationPrevious 
-                            onClick={() => setPage(Math.max(1, page - 1))}
-                            className={cn("sm:px-3 px-4 sm:py-2 py-3 text-base sm:text-sm", page === 1 && "pointer-events-none opacity-50")}
-                          />
-                        </PaginationItem>
-                        {generatePaginationItems()}
-                        <PaginationItem>
-                          <PaginationNext 
-                            onClick={() => setPage(Math.min(totalPages, page + 1))}
-                            className={cn("sm:px-3 px-4 sm:py-2 py-3 text-base sm:text-sm", page === totalPages && "pointer-events-none opacity-50")}
-                          />
-                        </PaginationItem>
-                      </PaginationContent>
-                    </Pagination>
+                  <div className="mt-6 overflow-x-auto">
+                    <div className="flex justify-center min-w-0">
+                      <Pagination>
+                        <PaginationContent className="flex-nowrap gap-1 sm:gap-2 min-w-0">
+                          <PaginationItem>
+                            <PaginationPrevious 
+                              onClick={() => setPage(Math.max(1, page - 1))}
+                              className={cn("sm:px-3 px-4 sm:py-2 py-3 text-base sm:text-sm", page === 1 && "pointer-events-none opacity-50")}
+                            />
+                          </PaginationItem>
+                          {generatePaginationItems()}
+                          <PaginationItem>
+                            <PaginationNext 
+                              onClick={() => setPage(Math.min(totalPages, page + 1))}
+                              className={cn("sm:px-3 px-4 sm:py-2 py-3 text-base sm:text-sm", page === totalPages && "pointer-events-none opacity-50")}
+                            />
+                          </PaginationItem>
+                        </PaginationContent>
+                      </Pagination>
+                    </div>
                   </div>
                 )}
               </CardContent>
@@ -737,14 +751,36 @@ function App() {
           </div>
         </div>
         
-        {/* 访问统计 */}
-        {/* <div className="mt-8 text-center">
-          <div className="inline-flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-full">
+        {/* 访问统计、GitHub链接和数据来源按钮 */}
+        <div className="mt-8 text-center">
+          <div className="inline-flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-full">
             <span id="busuanzi_container_site_pv">
               本站总访问量 <span id="busuanzi_value_site_pv" className="font-semibold text-blue-600 dark:text-blue-400">-</span> 次
             </span>
+            <span className="text-gray-300 dark:text-gray-600">|</span>
+            <a
+              href="https://github.com/badman200/medicine"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+              </svg>
+              GitHub
+            </a>
+            <span className="text-gray-300 dark:text-gray-600">|</span>
+            <button
+              onClick={() => setDisclaimerOpen(true)}
+              className="inline-flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+              </svg>
+              数据来源与免责声明
+            </button>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
