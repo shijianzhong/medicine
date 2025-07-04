@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Search, Menu, Github, Sun, Moon } from 'lucide-react';
+import { Search, Menu, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -58,6 +58,9 @@ function App() {
   const pageSize = 8;
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [password, setPassword] = useState('');
+  const [passwordError, setPasswordError] = useState('');
   const categoryRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   // 主题初始化
@@ -88,7 +91,29 @@ function App() {
     console.log('HTML classList:', document.documentElement.classList.toString());
   };
 
+  // 密码验证函数
+  const handlePasswordSubmit = () => {
+    if (password === 'ivwapgFx') {
+      setIsAuthenticated(true);
+      setPasswordError('');
+      localStorage.setItem('medicine_auth', 'true');
+    } else {
+      setPasswordError('密码错误，请重新输入');
+      setPassword('');
+    }
+  };
+
+  // 检查是否已认证
   useEffect(() => {
+    const savedAuth = localStorage.getItem('medicine_auth');
+    if (savedAuth === 'true') {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isAuthenticated) return;
+    
     const loadData = async () => {
       try {
         // 加载所有sheet的数据
@@ -113,7 +138,7 @@ function App() {
     };
     
     loadData();
-  }, []);
+  }, [isAuthenticated]);
 
   useEffect(() => {
     setSelectedCategory(null);
@@ -132,12 +157,53 @@ function App() {
     }
   }, [selectedCategory]);
 
+  // 密码验证界面
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
+        <div className="max-w-md w-full mx-auto p-6">
+          <Card className="rounded-xl shadow-lg bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                药品目录查询系统
+              </CardTitle>
+              <p className="text-gray-600 dark:text-gray-400">
+                请输入访问密码
+              </p>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-2">
+                <Input
+                  type="password"
+                  placeholder="请输入密码"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  onKeyPress={(e) => e.key === 'Enter' && handlePasswordSubmit()}
+                  className="w-full h-12 text-center text-lg border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+                />
+                {passwordError && (
+                  <p className="text-red-500 text-sm text-center">{passwordError}</p>
+                )}
+              </div>
+              <Button 
+                onClick={handlePasswordSubmit}
+                className="w-full h-12 bg-blue-600 dark:bg-blue-700 hover:bg-blue-700 dark:hover:bg-blue-800 text-white font-semibold"
+              >
+                进入系统
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    );
+  }
+
   if (!medicineData) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
-          <p className="text-muted-foreground">加载中...</p>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600 dark:text-gray-400">加载中...</p>
         </div>
       </div>
     );
@@ -198,7 +264,13 @@ function App() {
 
   // 递归渲染分类树
   function renderCategoryTree(categories: Record<string, Category>, level = 0, isMobileDrawer = false) {
-    return Object.values(categories).map((cat: Category) => {
+    // 过滤分类
+    const filteredCategories = Object.values(categories).filter((cat: Category) => {
+      if (!categorySearch) return true;
+      return cat.name.toLowerCase().includes(categorySearch.toLowerCase());
+    });
+
+    return filteredCategories.map((cat: Category) => {
       const expanded = expandedCategories[cat.code] ?? false;
       const hasChildren = cat.subcategories && Object.keys(cat.subcategories).length > 0;
       return (
@@ -380,16 +452,7 @@ function App() {
             >
               {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
             </button>
-            {/* GitHub链接 */}
-            <a
-              href="https://github.com/badman200/medicine"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 dark:bg-gray-600 text-white shadow hover:bg-gray-700 dark:hover:bg-gray-500 transition-colors"
-              title="查看GitHub仓库"
-            >
-              <Github className="h-5 w-5" />
-            </a>
+
             {/* 移动端分类按钮 */}
             <button
               className="sm:hidden flex items-center gap-2 px-3 py-2 rounded-md bg-blue-600 dark:bg-blue-700 text-white shadow hover:bg-blue-700 dark:hover:bg-blue-800"
